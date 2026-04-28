@@ -1,0 +1,237 @@
+/* kv */
+.kv {
+    min-height: 100vh;
+  
+    &__inner {
+      background: linear-gradient(180deg, #51DDDB 0%, #00C3C2 100%);
+      border-radius: 0 0 0 6rem;
+      min-height: calc(100vh - 4.8rem);
+      padding-top: 2.4rem;
+      padding-bottom: 3.2rem;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    &__inner::after {
+      content: "M";
+      position: absolute;
+      right: 14rem;
+      top: 6rem;
+      font-size: 48rem;
+      line-height: 1;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.08);
+      pointer-events: none;
+    }
+  
+    
+  
+    &__content {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+  
+    &__copy {
+      max-width: 62rem;
+    }
+  
+    &__lead {
+      color: #0f5f6a;
+      font-size: 4.4rem;
+      font-weight: 700;
+      margin-bottom: 2.4rem;
+      letter-spacing: 0.02em;
+    }
+  
+    &__title {
+      font-size: 6rem;
+      line-height: 1.35;
+      color: #0f6b74;
+      font-weight: 700;
+      margin-bottom: 3rem;
+  
+      span {
+        color: #fff;
+      }
+    }
+  
+    &__brand {
+      background: #fff;
+      color: #008e96;
+      border-radius: 2.2rem;
+      font-size: 8rem;
+      font-weight: 700;
+      line-height: 1;
+      padding: 2rem 3rem;
+      display: inline-block;
+      margin-bottom: 2.4rem;
+    }
+  
+    &__desc {
+      color: #0f5f6a;
+      font-size: 2.2rem;
+      line-height: 1.8;
+    }
+  
+    &__visual {
+      justify-self: end;
+      width: 100%;
+      max-width: 70rem;
+    }
+  
+    &__laptop {
+      margin-bottom: 2.8rem;
+    }
+  
+    &__cta {
+      width: 100%;
+      max-width: 56rem;
+      margin-left: auto;
+      background: #ffe24a;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.4rem;
+      color: #047f8d;
+      padding: 2rem 3rem;
+      box-shadow: inset 0 -0.4rem 0 #d2b828;
+  
+      small {
+        font-size: 2.2rem;
+        font-weight: 500;
+      }
+  
+      strong {
+        font-size: 3.8rem;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+  
+      span {
+        color: #0a98a4;
+      }
+    }
+  
+    &__arrow {
+      font-size: 5rem;
+      line-height: 1;
+      margin-left: 0.8rem;
+    }
+  
+    @include lg {
+      &__content {
+        grid-template-columns: 1fr;
+      }
+  
+      &__visual {
+        justify-self: center;
+        max-width: 86rem;
+      }
+    }
+  
+    @include sm {
+      padding: 1rem;
+  
+      &__inner {
+        min-height: auto;
+        border-radius: 0 0 0 3rem;
+        padding-top: 1.4rem;
+      }
+  
+      &__inner::after {
+        right: -4rem;
+        top: 16rem;
+        font-size: 30rem;
+      }
+  
+      &__header {
+        margin-bottom: 2.6rem;
+      }
+  
+      &__logo {
+        padding: 1rem 1.4rem;
+      }
+  
+      &__logo-text {
+        font-size: 2.4rem;
+      }
+  
+      &__contact {
+        padding: 0.9rem 1.6rem;
+        font-size: 1.2rem;
+      }
+  
+      &__menu {
+        width: 4.4rem;
+        height: 4.4rem;
+      }
+
+      &__dropdown {
+        top: calc(100% + 1rem);
+        width: min(70rem, calc(100vw - 3rem));
+        padding: 2rem;
+        border-radius: 0 0 1.6rem 0;
+      }
+
+      &__dropdown-list {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+
+        a {
+          font-size: 1.8rem;
+
+          &::before {
+            font-size: 1.8rem;
+          }
+        }
+      }
+  
+      &__lead {
+        font-size: 2.2rem;
+        margin-bottom: 1.2rem;
+      }
+  
+      &__title {
+        font-size: 3.4rem;
+        margin-bottom: 1.6rem;
+      }
+  
+      &__brand {
+        font-size: 4.4rem;
+        border-radius: 1.4rem;
+        padding: 1.2rem 1.8rem;
+        margin-bottom: 1.6rem;
+      }
+  
+      &__desc {
+        font-size: 1.6rem;
+        line-height: 1.7;
+      }
+  
+      &__cta {
+        max-width: 100%;
+        padding: 1.4rem 1.6rem;
+        gap: 0.7rem;
+  
+        small {
+          font-size: 1.3rem;
+        }
+  
+        strong {
+          font-size: 2rem;
+        }
+      }
+  
+      &__arrow {
+        font-size: 3rem;
+        margin-left: 0.2rem;
+      }
+    }
+  }
+
+  /* kv */

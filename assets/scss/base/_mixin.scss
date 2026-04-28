@@ -5,31 +5,31 @@ $breakpoint-xl: 1280px;
 $breakpoint-xxl: 1440px;
 
 @mixin sm {
-  @media (min-width: $breakpoint-sm) {
+  @media (max-width: $breakpoint-sm) {
     @content;
   }
 }
 
 @mixin md {
-  @media (min-width: $breakpoint-md) {
+  @media (max-width: $breakpoint-md) {
     @content;
   }
 }
 
 @mixin lg {
-  @media (min-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-lg) {
     @content;
   }
 }
 
 @mixin xl {
-  @media (min-width: $breakpoint-xl) {
+  @media (max-width: $breakpoint-xl) {
     @content;
   }
 }
 
 @mixin xxl {
-  @media (min-width: $breakpoint-xxl) {
+  @media (max-width: $breakpoint-xxl) {
     @content;
   }
 }

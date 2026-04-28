@@ -1,0 +1,116 @@
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>task forest</title>
+</head>
+
+<body>
+    <header class="header container">
+        <a href="#" class="header__logo" aria-label="task forest">
+            <img src="./assets/images/logo.png" alt="task forest">
+        </a>
+
+        <div class="header__actions">
+            <a href="#" class="header__contact">お問い合わせ</a>
+            <button class="header__menu" aria-label="メニューを開く" aria-expanded="false" aria-controls="header-dropdown-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="header__dropdown" id="header-dropdown-menu" aria-label="サイトメニュー">
+                <ul class="header__dropdown-list">
+                    <li><a href="#">よくある課題</a></li>
+                    <li><a href="#">解決策</a></li>
+                    <li><a href="#">3つの強み</a></li>
+                    <li><a href="#">3つの特徴</a></li>
+                    <li><a href="#">導入・活用例</a></li>
+                    <li><a href="#">導入効果</a></li>
+                    <li><a href="#">導入ステップ</a></li>
+                    <li><a href="#">ご利用の流れ</a></li>
+                    <li><a href="#">よくあるご質問</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="kv">
+        <div class="kv__inner container">
+            <section class="kv__content">
+                <div class="kv__copy">
+                    <p class="kv__lead">「引き継ぎ」という、経営最大のリスクをゼロにする</p>
+                    <h1 class="kv__title">
+                        業務を<span>資産に</span>変え、<br>
+                        組織を属人化から解放する<br>
+                        業務標準化プラットフォーム
+                    </h1>
+
+                    <div class="kv__brand">task forest</div>
+
+                    <p class="kv__desc">
+                        担当者の突然の退職、急な休職、急な異動…<br>
+                        「あの人にしか分からない」という業務のブラックボックスを自動で効率化<br>
+                        各担当者の属人化の作業を全て可視化し、再現性のある仕組みへ
+                    </p>
+                </div>
+
+                <div class="kv__visual">
+                    <div class="kv__laptop">
+                        <img src="./assets/images/computer.png" alt="">
+                    </div>
+
+                    <a href="#" class="kv__cta">
+                        <small>1ヶ月無料で</small>
+                        <strong>自社の業務 <span>資産化</span>してみる</strong>
+                        <span class="kv__arrow" aria-hidden="true">›</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script>
+        (() => {
+            const menuButton = document.querySelector(".header__menu");
+            const dropdown = document.querySelector(".header__dropdown");
+
+            if (!menuButton || !dropdown) return;
+
+            const closeMenu = () => {
+                menuButton.classList.remove("is-open");
+                dropdown.classList.remove("is-open");
+                menuButton.setAttribute("aria-expanded", "false");
+            };
+
+            const openMenu = () => {
+                menuButton.classList.add("is-open");
+                dropdown.classList.add("is-open");
+                menuButton.setAttribute("aria-expanded", "true");
+            };
+
+            menuButton.addEventListener("click", () => {
+                const isOpen = menuButton.classList.contains("is-open");
+                if (isOpen) {
+                    closeMenu();
+                    return;
+                }
+                openMenu();
+            });
+
+            document.addEventListener("click", (event) => {
+                if (!menuButton.classList.contains("is-open")) return;
+                if (menuButton.contains(event.target) || dropdown.contains(event.target)) return;
+                closeMenu();
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape") closeMenu();
+            });
+        })();
+    </script>
+</body>
+
+</html>
