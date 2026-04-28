@@ -1,5 +1,8 @@
 .header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,20 +131,13 @@
       color: #003D3D;
       transition: opacity 0.2s ease;
 
-      &::before {
-        content: "›";
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 1rem;
-        height: 2rem;
-        font-size: 2rem;
-        line-height: 1;
-        background: linear-gradient(90deg, #093028 0%, #237A57 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: transparent;
+      .header__dropdown-arrow {
+        width: 0.7rem;
+        height: 0.7rem;
+        border-right: 0.2rem solid #008080;
+        border-bottom: 0.2rem solid #008080;
+        transform: rotate(-45deg);
+        margin-left: 0.4rem;
       }
 
       &:hover {

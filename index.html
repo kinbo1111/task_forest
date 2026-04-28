@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>task forest</title>
 </head>
@@ -18,97 +20,469 @@
 
         <div class="header__actions">
             <a href="#" class="header__contact">お問い合わせ</a>
-            <button class="header__menu" aria-label="メニューを開く" aria-expanded="false" aria-controls="header-dropdown-menu">
+            <button class="header__menu" aria-label="メニューを開く" aria-expanded="false"
+                aria-controls="header-dropdown-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <nav class="header__dropdown" id="header-dropdown-menu" aria-label="サイトメニュー">
                 <ul class="header__dropdown-list">
-                    <li><a href="#">よくある課題</a></li>
-                    <li><a href="#">解決策</a></li>
-                    <li><a href="#">3つの強み</a></li>
-                    <li><a href="#">3つの特徴</a></li>
-                    <li><a href="#">導入・活用例</a></li>
-                    <li><a href="#">導入効果</a></li>
-                    <li><a href="#">導入ステップ</a></li>
-                    <li><a href="#">ご利用の流れ</a></li>
-                    <li><a href="#">よくあるご質問</a></li>
+                    <li><a href="#"><span class="header__dropdown-arrow"></span>よくある課題</a></li>
+                    <li><a href="#"><span class="header__dropdown-arrow"></span>解決策</a></li>
+                    <li><a href="#"><span class="header__dropdown-arrow"></span>3つの強み</a></li>
+                    <li><a href="#"><span class="header__dropdown-arrow"></span>3つの特徴</a></li>
+                    <li><a href="#"><span class="header__dropdown-arrow"></span>導入・活用例</a></li>
+                    <li><a href="#"><span class="header__dropdown-arrow"></span>導入効果</a></li>
+                    <li><a href="#"><span class="header__dropdown-arrow"></span>導入ステップ</a></li>
+                    <li><a href="#"><span class="header__dropdown-arrow"></span>ご利用の流れ</a></li>
+                    <li><a href="#"><span class="header__dropdown-arrow"></span>よくあるご質問</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="kv">
-        <div class="kv__inner container">
-            <section class="kv__content">
-                <div class="kv__copy">
-                    <p class="kv__lead">「引き継ぎ」という、経営最大のリスクをゼロにする</p>
-                    <h1 class="kv__title">
-                        業務を<span>資産に</span>変え、<br>
-                        組織を属人化から解放する<br>
-                        業務標準化プラットフォーム
-                    </h1>
-
-                    <div class="kv__brand">task forest</div>
-
+    <main>
+        <section class="kv">
+            <div class="kv__inner container">
+                <div class="kv__content">
+                    <div class="kv__copy">
+                        <p class="kv__lead gradient-text text-24">「引き継ぎ」という、経営最大のリスクを<span class="text-24">ゼロ</span>にする
+                        </p>
+                        <h1 class="kv__title">
+                            <span class="text-white text-38">業務</span><span class="text-30 text-white">を</span><span
+                                class="gradient-text text-38">資産</span><span class="text-30 text-white">に変え、</span><br>
+                            <span class="text-white text-38">組織</span><span class="text-30 text-white">を</span><span
+                                class="gradient-text text-38">属人化</span><span
+                                class="text-30 gradient-text">から解放</span><span class="text-30 text-white">する</span><br>
+                            <span class="gradient-text text-38">業務標準化プラットフォーム</span>
+                        </h1>
+                        <div class="kv__brand"><img src="./assets/images/logo.png" alt=""></div>
+                    </div>
                     <p class="kv__desc">
                         担当者の突然の退職、急な休職、急な異動…<br>
                         「あの人にしか分からない」という業務のブラックボックスを自動で効率化<br>
                         各担当者の属人化の作業を全て可視化し、再現性のある仕組みへ
                     </p>
-                </div>
 
+                </div>
                 <div class="kv__visual">
                     <div class="kv__laptop">
                         <img src="./assets/images/computer.png" alt="">
                     </div>
-
                     <a href="#" class="kv__cta">
-                        <small>1ヶ月無料で</small>
-                        <strong>自社の業務 <span>資産化</span>してみる</strong>
-                        <span class="kv__arrow" aria-hidden="true">›</span>
+                        <p><span class="kv__cta-bold text-30">1</span><span
+                                class="kv__cta-bold text-20">ヶ月</span>無料で<br>自社の業務を<span
+                                class="kv__cta-bold text-30">資産化</span>してみる</p>
+                        <span class="kv__arrow" aria-hidden="true"></span>
                     </a>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+        <section class="feature-strip">
+            <div class="feature-strip__inner container">
+                <article class="feature-strip__item">
+                    <h2 class="gradient-text">マニュアル<span class="text-40">不要</span></h2>
+                    <p class="gradient-text">業務標準化ツール</p>
+                </article>
+                <article class="feature-strip__item">
+                    <h2 class="gradient-text"><span class="text-40">AI</span>がタスクを</h2>
+                    <p class="gradient-text">自動派生・管理</p>
+                </article>
+                <article class="feature-strip__item">
+                    <h2 class="gradient-text"><span class="text-40">30</span><span class="text-30">%</span></h2>
+                    <p class="gradient-text">の工数削減が可能</p>
+                </article>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="faq__inner container">
+                <div class="faq__header">
+                    <p class="faq__eyebrow">FAQ</p>
+                    <h2 class="faq__title">よくあるご質問</h2>
+                </div>
+
+                <nav class="faq__category-nav" aria-label="FAQカテゴリーナビゲーション">
+                    <button class="faq__category-link is-active" type="button" data-faq-nav="1">
+                        導入・対象について
+                        <span class="faq__category-link-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="faq__category-link" type="button" data-faq-nav="2">
+                        製品の特長について
+                        <span class="faq__category-link-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="faq__category-link" type="button" data-faq-nav="3">
+                        AIの精度と自動化の範囲
+                        <span class="faq__category-link-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="faq__category-link" type="button" data-faq-nav="4">
+                        効果について
+                        <span class="faq__category-link-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="faq__category-link" type="button" data-faq-nav="5">
+                        設定・運用・セキュリティについて
+                        <span class="faq__category-link-icon" aria-hidden="true"></span>
+                    </button>
+                </nav>
+
+                <article class="faq__category is-open" data-faq-category="1">
+                    <button class="faq__category-trigger" aria-expanded="true">
+                        <span>導入・対象について</span>
+                        <span class="faq__category-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq__category-body">
+                        <article class="faq__item">
+                            <button class="faq__question" aria-expanded="false">
+                                <span class="faq__label">Q</span>
+                                <span class="faq__text">どのような企業に向いていますか？</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="faq__answer">
+                                <p class="faq__label faq__label--answer">A</span>
+                                <p class="faq__text">はい。数名のチームから大企業まで柔軟に使えるのが特徴です。はい。数名のチームから大企業まで柔軟に使えるのが特徴です。はい。数名のチームから大企業まで柔軟に使えるのが特徴です。はい。数名のチームから大企業まで柔軟に使えるのが特徴です。
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="faq__item">
+                            <button class="faq__question" aria-expanded="false">
+                                <span class="faq__label">Q</span>
+                                <span class="faq__text">小規模な組織でも使えますか？</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="faq__answer">
+                                <p class="faq__label faq__label--answer">A</span>
+                                <p class="faq__text">はい。数名のチームから大企業まで柔軟に使えるのが特徴です。はい。数名のチームから大企業まで柔軟に使えるのが特徴です。はい。数名のチームから大企業まで柔軟に使えるのが特徴です。はい。数名のチームから大企業まで柔軟に使えるのが特徴です。</p>
+                            </div>
+                        </article>
+                    </div>
+                </article>
+
+                <article class="faq__category" data-faq-category="2">
+                    <button class="faq__category-trigger" aria-expanded="false">
+                        <span>製品の特徴について</span>
+                        <span class="faq__category-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq__category-body">
+                        <article class="faq__item">
+                            <button class="faq__question" aria-expanded="false">
+                                <span class="faq__label">Q</span>
+                                <span class="faq__text">他サービスとの違いは何ですか？</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="faq__answer">
+                                <p class="faq__label faq__label--answer">A</span>
+                                <p class="faq__text">ダミー回答です。セクションごとに内容を差し替えてください。ダミー回答です。セクションごとに内容を差し替えてください。ダミー回答です。セクションごとに内容を差し替えてください。ダミー回答です。セクションごとに内容を差し替えてください。</p>
+                            </div>
+                        </article>
+                    </div>
+                </article>
+
+                <article class="faq__category" data-faq-category="3">
+                    <button class="faq__category-trigger" aria-expanded="false">
+                        <span>AIの精度と自動化の範囲</span>
+                        <span class="faq__category-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq__category-body">
+                        <article class="faq__item">
+                            <button class="faq__question" aria-expanded="false">
+                                <span class="faq__label">Q</span>
+                                <span class="faq__text">AIはどこまで自動化できますか？</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="faq__answer">
+                                <p class="faq__label faq__label--answer">A</span>
+                                <p class="faq__text">ダミー回答です。想定機能に合わせて記載してください。ダミー回答です。想定機能に合わせて記載してください。ダミー回答です。想定機能に合わせて記載してください。ダミー回答です。想定機能に合わせて記載してください。</p>
+                            </div>
+                        </article>
+                    </div>
+                </article>
+                <article class="faq__category" data-faq-category="4">
+                    <button class="faq__category-trigger" aria-expanded="false">
+                        <span>効果について</span>
+                        <span class="faq__category-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq__category-body">
+                        <article class="faq__item">
+                            <button class="faq__question" aria-expanded="false">
+                                <span class="faq__label">Q</span>
+                                <span class="faq__text">AIはどこまで自動化できますか？</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="faq__answer">
+                                <p class="faq__label faq__label--answer">A</span>
+                                <p class="faq__text">ダミー回答です。想定機能に合わせて記載してください。ダミー回答です。想定機能に合わせて記載してください。ダミー回答です。想定機能に合わせて記載してください。ダミー回答です。想定機能に合わせて記載してください。</p>
+                            </div>
+                        </article>
+                    </div>
+                </article>
+                <article class="faq__category" data-faq-category="5">
+                    <button class="faq__category-trigger" aria-expanded="false">
+                        <span>設定・運用・セキュリティについて</span>
+                        <span class="faq__category-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq__category-body">
+                        <article class="faq__item">
+                            <button class="faq__question" aria-expanded="false">
+                                <span class="faq__label">Q</span>
+                                <span class="faq__text">AIはどこまで自動化できますか？</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="faq__answer">
+                                <p class="faq__label faq__label--answer">A</span>
+                                <p class="faq__text">ダミー回答です。想定機能に合わせて記載してください。ダミー回答です。想定機能に合わせて記載してください。ダミー回答です。想定機能に合わせて記載してください。ダミー回答です。想定機能に合わせて記載してください。</p>
+                            </div>
+                        </article>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="contact-form">
+            <div class="contact-form__inner container">
+                <div class="contact-form__header">
+                    <p class="contact-form__eyebrow">FORM</p>
+                    <h2 class="contact-form__title">お申し込みフォーム</h2>
+                    <p class="contact-form__lead">引き継ぎ準備<span class="number">40</span>時間を<span class="contact-form__border"><span class="number">0</span>時間</span>に、新人の即戦力化を<span class="contact-form__border"><span class="number">3</span>倍速める</span>。</p>
+                    <p class="contact-form__sub">貴社の業務状況に合わせて、最適な効率化プランをシミュレーションいたします。<br>まずは1ヶ月、その効果をご体感ください。</p>
+                </div>
+
+                <form class="contact-form__panel" action="#" method="post">
+                    <div class="contact-form__row">
+                        <label class="contact-form__label" for="company">会社・組織名 <span class="contact-form__badge is-required">必須</span></label>
+                        <input class="contact-form__field" id="company" type="text" placeholder="企業名を入力してください。個人の方は個人事業と入力してください">
+                    </div>
+
+                    <div class="contact-form__row">
+                        <label class="contact-form__label" for="name">ご担当者名 <span class="contact-form__badge is-required">必須</span></label>
+                        <input class="contact-form__field" id="name" type="text" placeholder="ご担当者名を入力してください">
+                    </div>
+
+                    <div class="contact-form__row">
+                        <label class="contact-form__label" for="email">メールアドレス <span class="contact-form__badge is-required">必須</span></label>
+                        <input class="contact-form__field" id="email" type="email" placeholder="メールアドレスを入力してください">
+                    </div>
+
+                    <div class="contact-form__row">
+                        <p class="contact-form__label">目的 <small>（複数回答可）</small> <span class="contact-form__badge is-required">必須</span></p>
+                        <div class="contact-form__field contact-form__field--checks">
+                            <label><input type="checkbox"> 無料トライアルをしたい</label>
+                            <label><input type="checkbox"> 話を聞いてみたい</label>
+                            <label><input type="checkbox"> その他</label>
+                        </div>
+                    </div>
+
+                    <div class="contact-form__row">
+                        <p class="contact-form__label">現在のお悩み <small>（複数回答可）</small> <span class="contact-form__badge is-required">必須</span></p>
+                        <div class="contact-form__field contact-form__field--checks">
+                            <label><input type="checkbox"> 属人化していて引き継ぎが大変</label>
+                            <label><input type="checkbox"> 新人の教育に時間がかかっている</label>
+                            <label><input type="checkbox"> 管理職の確認・修正工数が多い</label>
+                            <label><input type="checkbox"> マニュアルが整備されていない</label>
+                            <label><input type="checkbox"> その他</label>
+                        </div>
+                    </div>
+
+                    <div class="contact-form__row">
+                        <p class="contact-form__label">組織規模 <span class="contact-form__badge">任意</span></p>
+                        <div class="contact-form__field contact-form__field--checks">
+                            <label><input type="radio" name="size" checked> 10名未満</label>
+                            <label><input type="radio" name="size"> 10〜30名</label>
+                            <label><input type="radio" name="size"> 31〜100名</label>
+                            <label><input type="radio" name="size"> 101名以上</label>
+                        </div>
+                    </div>
+
+                    <div class="contact-form__row">
+                        <p class="contact-form__label">導入検討時期 <span class="contact-form__badge">任意</span></p>
+                        <div class="contact-form__field contact-form__field--checks">
+                            <label><input type="radio" name="timing" checked> すぐに</label>
+                            <label><input type="radio" name="timing"> 3ヶ月以内</label>
+                            <label><input type="radio" name="timing"> 半年以内</label>
+                            <label><input type="radio" name="timing"> 情報収集として</label>
+                        </div>
+                    </div>
+
+                    <div class="contact-form__row">
+                        <label class="contact-form__label" for="detail">ご相談内容詳細 <span class="contact-form__badge">任意</span></label>
+                        <textarea class="contact-form__field contact-form__field--textarea" id="detail" placeholder="具体的な相談内容があれば入力してください"></textarea>
+                    </div>
+
+                    <label class="contact-form__agree">
+                        <input type="checkbox" checked>
+                        <span><a href="#" class="contact-form__policy-link">プライバシーポリシー</a>に同意する</span>
+                    </label>
+
+                    <button class="contact-form__submit" type="submit">
+                        <span class="text-30">1</span><span class="text-20">ヶ月無料トライアル</span>を申し込む
+                    </button>
+                </form>
+            </div>
+        </section>
     </main>
+
     <script>
         (() => {
-            const menuButton = document.querySelector(".header__menu");
-            const dropdown = document.querySelector(".header__dropdown");
+            const initHeaderMenu = () => {
+                const menuButton = document.querySelector(".header__menu");
+                const dropdown = document.querySelector(".header__dropdown");
 
-            if (!menuButton || !dropdown) return;
+                if (!menuButton || !dropdown) return;
 
-            const closeMenu = () => {
-                menuButton.classList.remove("is-open");
-                dropdown.classList.remove("is-open");
-                menuButton.setAttribute("aria-expanded", "false");
-            };
+                const closeMenu = () => {
+                    menuButton.classList.remove("is-open");
+                    dropdown.classList.remove("is-open");
+                    menuButton.setAttribute("aria-expanded", "false");
+                };
 
-            const openMenu = () => {
-                menuButton.classList.add("is-open");
-                dropdown.classList.add("is-open");
-                menuButton.setAttribute("aria-expanded", "true");
-            };
+                const openMenu = () => {
+                    menuButton.classList.add("is-open");
+                    dropdown.classList.add("is-open");
+                    menuButton.setAttribute("aria-expanded", "true");
+                };
 
-            menuButton.addEventListener("click", () => {
-                const isOpen = menuButton.classList.contains("is-open");
-                if (isOpen) {
+                menuButton.addEventListener("click", () => {
+                    const isOpen = menuButton.classList.contains("is-open");
+                    if (isOpen) {
+                        closeMenu();
+                        return;
+                    }
+                    openMenu();
+                });
+
+                document.addEventListener("click", (event) => {
+                    if (!menuButton.classList.contains("is-open")) return;
+                    if (menuButton.contains(event.target) || dropdown.contains(event.target)) return;
                     closeMenu();
-                    return;
+                });
+
+                document.addEventListener("keydown", (event) => {
+                    if (event.key === "Escape") closeMenu();
+                });
+            };
+
+            const initFaq = () => {
+                const categories = document.querySelectorAll(".faq__category");
+                const navButtons = document.querySelectorAll(".faq__category-link");
+                const questions = document.querySelectorAll(".faq__question");
+                if (!categories.length) return;
+
+                const setAccordionState = (element, isOpen) => {
+                    if (isOpen) {
+                        element.style.maxHeight = `${element.scrollHeight}px`;
+                        const onOpenEnd = (event) => {
+                            if (event.target !== element || event.propertyName !== "max-height") return;
+                            element.style.maxHeight = "none";
+                            element.removeEventListener("transitionend", onOpenEnd);
+                        };
+                        element.addEventListener("transitionend", onOpenEnd);
+                        return;
+                    }
+
+                    if (element.style.maxHeight === "none") {
+                        element.style.maxHeight = `${element.scrollHeight}px`;
+                        void element.offsetHeight;
+                    }
+                    element.style.maxHeight = "0px";
+                };
+
+                const syncActiveNav = () => {
+                    const openedCategory = document.querySelector(".faq__category.is-open");
+                    const activeId = openedCategory?.dataset.faqCategory;
+                    navButtons.forEach((button) => {
+                        button.classList.toggle("is-active", button.dataset.faqNav === activeId);
+                    });
+                };
+
+                const refreshOpenCategoryHeights = () => {
+                    categories.forEach((category) => {
+                        const body = category.querySelector(".faq__category-body");
+                        if (!body) return;
+                        if (category.classList.contains("is-open")) {
+                            body.style.maxHeight = "none";
+                        }
+                    });
+                };
+
+                categories.forEach((category) => {
+                    const trigger = category.querySelector(".faq__category-trigger");
+                    const body = category.querySelector(".faq__category-body");
+                    if (!trigger || !body) return;
+
+                    setAccordionState(body, category.classList.contains("is-open"));
+
+                    trigger.addEventListener("click", () => {
+                        const opened = category.classList.toggle("is-open");
+                        trigger.setAttribute("aria-expanded", opened ? "true" : "false");
+                        setAccordionState(body, opened);
+                        syncActiveNav();
+                    });
+                });
+
+                navButtons.forEach((button) => {
+                    button.addEventListener("click", () => {
+                        const targetCategory = document.querySelector(`[data-faq-category="${button.dataset.faqNav}"]`);
+                        if (!targetCategory) return;
+
+                        const trigger = targetCategory.querySelector(".faq__category-trigger");
+                        const body = targetCategory.querySelector(".faq__category-body");
+                        if (!trigger || !body) return;
+
+                        categories.forEach((category) => {
+                            const categoryTrigger = category.querySelector(".faq__category-trigger");
+                            const categoryBody = category.querySelector(".faq__category-body");
+                            if (!categoryTrigger || !categoryBody) return;
+                            const isTarget = category === targetCategory;
+                            category.classList.toggle("is-open", isTarget);
+                            categoryTrigger.setAttribute("aria-expanded", isTarget ? "true" : "false");
+                            setAccordionState(categoryBody, isTarget);
+                        });
+
+                        targetCategory.scrollIntoView({ behavior: "smooth", block: "start" });
+                        syncActiveNav();
+                    });
+                });
+
+                syncActiveNav();
+
+                questions.forEach((button) => {
+                    const item = button.closest(".faq__item");
+                    const answer = item?.querySelector(".faq__answer");
+                    if (answer) {
+                        setAccordionState(answer, item.classList.contains("is-open"));
+                    }
+
+                    button.addEventListener("click", () => {
+                        const item = button.closest(".faq__item");
+                        const answer = item?.querySelector(".faq__answer");
+                        if (!item || !answer) return;
+                        const expanded = item.classList.toggle("is-open");
+                        button.setAttribute("aria-expanded", expanded ? "true" : "false");
+                        setAccordionState(answer, expanded);
+
+                        const categoryBody = item.closest(".faq__category-body");
+                        if (categoryBody && categoryBody.style.maxHeight !== "0px") {
+                            requestAnimationFrame(() => {
+                                categoryBody.style.maxHeight = `${categoryBody.scrollHeight}px`;
+                            });
+                        }
+                    });
+                });
+
+                window.addEventListener("resize", () => {
+                    refreshOpenCategoryHeights();
+                });
+
+                // Prevent initial clipping after fonts/layout finalize.
+                requestAnimationFrame(() => {
+                    refreshOpenCategoryHeights();
+                });
+                window.addEventListener("load", refreshOpenCategoryHeights);
+                if (document.fonts?.ready) {
+                    document.fonts.ready.then(refreshOpenCategoryHeights);
                 }
-                openMenu();
-            });
+            };
 
-            document.addEventListener("click", (event) => {
-                if (!menuButton.classList.contains("is-open")) return;
-                if (menuButton.contains(event.target) || dropdown.contains(event.target)) return;
-                closeMenu();
-            });
-
-            document.addEventListener("keydown", (event) => {
-                if (event.key === "Escape") closeMenu();
-            });
+            initHeaderMenu();
+            initFaq();
         })();
     </script>
 </body>
