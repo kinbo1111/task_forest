@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.76923vw;
+  font-size: clamp(6px, 0.76923vw, 10px);
+  margin: 0;
+  @include sm {
+    font-size: 1.5625vw;
+  }
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #000;
+  letter-spacing: 0.25rem;
+  word-break: break-all;
+  @include sm {
+    font-size: 1.8rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-top: 1px solid currentColor;
+  opacity: 0.2;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+[role="button"] {
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: 0 !important;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
