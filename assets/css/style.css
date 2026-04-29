@@ -268,29 +268,6 @@ fieldset {
   line-height: 1.5;
   letter-spacing: 1%;
 }
-.kv__lead, .kv__title p, .kv__brand {
-  opacity: 0;
-  animation: fadeInUp 0.7s ease-out forwards;
-}
-.kv__title p {
-  display: block;
-  margin: 0;
-}
-.kv__lead {
-  animation-delay: 0s;
-}
-.kv__title p:nth-child(1) {
-  animation-delay: 0.12s;
-}
-.kv__title p:nth-child(2) {
-  animation-delay: 0.24s;
-}
-.kv__title p:nth-child(3) {
-  animation-delay: 0.36s;
-}
-.kv__brand {
-  animation-delay: 0.48s;
-}
 .kv__brand {
   width: 57rem;
   height: 13rem;
@@ -358,12 +335,16 @@ fieldset {
 .kv__cta-bold {
   font-weight: 700;
 }
+.kv__cta:hover .kv__arrow {
+  transform: translateX(5px) rotate(-45deg);
+}
 .kv__arrow {
   width: 1.5rem;
   height: 1.5rem;
   border-right: 0.4rem solid #008080;
   border-bottom: 0.4rem solid #008080;
   transform: rotate(-45deg);
+  transition: transform 0.3s ease;
 }
 
 /* feature-strip */
@@ -3144,13 +3125,17 @@ body {
 .trial-cta__button::after {
   content: "";
   position: absolute;
-  right: 3.6rem;
+  right: 6.8rem;
   top: 50%;
   width: 1.5rem;
-  height: 1.7rem;
+  height: 1.5rem;
   transform: translateY(-50%) rotate(-45deg);
   border-right: 0.4rem solid #008080;
   border-bottom: 0.4rem solid #008080;
+  transition: transform 0.3s ease, right 0.3s ease;
+}
+.trial-cta__button:hover::after {
+  right: 6rem;
 }
 .trial-cta__caption {
   position: relative;
