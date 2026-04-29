@@ -113,6 +113,7 @@
         letter-spacing: 1%;
         text-shadow: 1px 1px 0 #fff;
         margin: 5.5rem auto 0;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
         p {
             margin-bottom: 0.8rem;
         }
@@ -120,6 +121,8 @@
             font-weight: 700;
         }
         &:hover {
+            transform: translateY(4px);
+            box-shadow: unset;
             .kv__arrow {
                 transform: translateX(5px) rotate(-45deg);
             }
@@ -389,7 +392,7 @@
     }
 
     &__closing {
-        padding: 8.2rem 0;
+        padding: 11rem 0 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1857,11 +1860,11 @@
 
     &__step-body {
         width: 100%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 40% 1fr;
-        gap: 9.6rem;
+        display: flex;
         align-items: center;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
         padding: 5rem;
         border-radius: 5rem 0 0 0;
         background: linear-gradient(to left,
@@ -1869,13 +1872,14 @@
                 rgba(0, 195, 194, 1) 100%);
 
         @include md {
-            max-width: 100%;
+            flex-direction: column;
         }
     }
 
     &__visual {
         position: relative;
-
+        max-width: 34rem;
+        width: 100%;
         img {
             width: auto;
             height: 20rem;
@@ -1883,6 +1887,8 @@
     }
 
     &__content {
+        max-width: 47rem;
+        width: 100%;
         p {
             color: #003d3d;
             font-size: 1.6rem;
