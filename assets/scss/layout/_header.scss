@@ -8,7 +8,7 @@
 
     &-inner {
       position: relative;
-      overflow: hidden;
+      overflow: visible;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -38,8 +38,6 @@
 
   &.is-scrolled {
     .header-inner {
-      box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.08);
-
       &::before {
         transform: scaleX(1);
       }
