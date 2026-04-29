@@ -910,78 +910,88 @@ fieldset {
 
 /* feature-details */
 .feature-details {
-  padding: 4.2rem 5rem 1rem;
-  background: #efefef;
+  padding: 5rem;
 }
 .feature-details__title {
   text-align: center;
-  color: #003d3d;
-  font-size: 4rem;
+  color: #003D3D;
+  font-size: 2.4rem;
   font-weight: 700;
-  line-height: 1.45;
+  line-height: 4rem;
+  letter-spacing: 0;
 }
-.feature-details__title span {
+.feature-details__title .focus {
   color: #008080;
-  background: linear-gradient(transparent 70%, #ffe44b 70%);
+  font-size: 3rem;
+  background: linear-gradient(transparent 80%, #ffe44b 60%);
+}
+.feature-details__title .exclamation_mark {
+  color: #FFE44B;
+  font-size: 3.2rem;
+  font-style: italic;
+  letter-spacing: 0;
+  font-weight: 900;
 }
 .feature-details__list {
   margin-top: 3.2rem;
   display: grid;
-  gap: 2.6rem;
+  gap: 6.4rem;
 }
 .feature-details__item {
   position: relative;
-  padding-right: 36%;
+  padding-right: 28%;
 }
 .feature-details__body {
-  min-height: 24rem;
-  border-radius: 3.2rem 0 0 3.2rem;
-  background: linear-gradient(90deg, rgba(108, 206, 206, 0.85) 0%, rgba(0, 217, 245, 0.75) 100%);
-  padding: 2.6rem 6rem 2.6rem 3.4rem;
+  min-height: 28rem;
+  border-radius: 5rem 0 0;
+  background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
+  padding: 3.7rem 8rem 3.7rem 3.3rem;
 }
 .feature-details__meta {
   font-family: "Oswald", sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 1;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.95);
+  color: white;
   letter-spacing: 0;
 }
 .feature-details__meta span {
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-bottom: 0.1rem;
+  letter-spacing: 1%;
 }
 .feature-details__item-title {
   margin-top: -5.2rem;
   margin-left: 9rem;
-  color: #003d3d;
-  font-size: 4rem;
+  color: #002020;
+  font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.35;
+  letter-spacing: 0;
+}
+.feature-details__item-title span {
+  font-size: 3rem;
 }
 .feature-details__text {
-  margin-top: 2.2rem;
+  margin-top: 2.4rem;
   margin-left: 9rem;
   color: #003d3d;
   font-size: 1.6rem;
+  font-weight: 400;
   line-height: 1.7;
-  letter-spacing: 0;
+  letter-spacing: 1%;
 }
 .feature-details__visual {
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 35%;
-  border-radius: 0 0 3.2rem 0;
-  overflow: hidden;
-  box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.18);
+  top: 2.4rem;
+  width: 33%;
+  border-radius: 0 0 5rem 0;
 }
 .feature-details__visual img {
   width: 100%;
   height: auto;
-  display: block;
 }
 @media (max-width: 768px) {
   .feature-details {
