@@ -444,10 +444,6 @@ fieldset {
   background: #fff;
   z-index: -1;
 }
-.risk-panel__highlight {
-  display: inline-block;
-  background: linear-gradient(transparent 66%, #FFE44B 66%);
-}
 .risk-panel__issues {
   position: relative;
   display: grid;
@@ -567,16 +563,6 @@ fieldset {
 .risk-panel__footer-text span {
   position: relative;
   z-index: 0;
-}
-.risk-panel__footer-text span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0.3rem;
-  width: 100%;
-  height: 1.2rem;
-  background: #ffe44b;
-  z-index: -1;
 }
 .risk-panel__closing {
   padding: 8.2rem 0;
@@ -3180,6 +3166,32 @@ body {
   .trial-cta__caption {
     margin-top: 0.9rem;
     font-size: 1rem;
+  }
+}
+
+.highlight {
+  display: inline-block;
+  background: linear-gradient(transparent 66%, #FFE44B 66%);
+}
+
+.underline-reveal {
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0 100%;
+  opacity: 0.7;
+  transition: background-size 2s ease, opacity 2s ease;
+}
+.underline-reveal.is-visible {
+  background-size: 100% 100%;
+  opacity: 1;
+}
+
+@keyframes underlineReveal {
+  from {
+    background-size: 0 100%;
+  }
+  to {
+    background-size: 100% 100%;
   }
 }
 

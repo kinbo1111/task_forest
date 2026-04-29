@@ -131,3 +131,30 @@
         }
     }
 }
+
+.highlight {
+    display: inline-block;
+    background: linear-gradient(transparent 66%, #FFE44B 66%);
+}
+
+.underline-reveal {
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0 100%;
+    opacity: 0.7;
+    transition: background-size 2s ease, opacity 2s ease;
+
+    &.is-visible {
+        background-size: 100% 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes underlineReveal {
+    from {
+        background-size: 0 100%;
+    }
+    to {
+        background-size: 100% 100%;
+    }
+}

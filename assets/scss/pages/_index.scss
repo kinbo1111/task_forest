@@ -214,7 +214,6 @@
         font-weight: 700;
         line-height: 1.35;
         color: #002020;
-
     }
 
     &__term {
@@ -246,11 +245,6 @@
             background: #fff;
             z-index: -1;
         }
-    }
-
-    &__highlight {
-        display: inline-block;
-        background: linear-gradient(transparent 66%, #FFE44B 66%);
     }
 
     &__issues {
@@ -391,17 +385,6 @@
         span {
             position: relative;
             z-index: 0;
-
-            &::after {
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: 0.3rem;
-                width: 100%;
-                height: 1.2rem;
-                background: #ffe44b;
-                z-index: -1;
-            }
         }
     }
 
