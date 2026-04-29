@@ -1560,7 +1560,8 @@ fieldset {
   font-size: 1.6rem;
   font-weight: 700;
 }
-.effect-sim__compare .after p, .effect-sim__compare .after strong > span {
+.effect-sim__compare .after p,
+.effect-sim__compare .after strong > span {
   background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -1757,12 +1758,13 @@ fieldset {
 .asset-steps__step {
   position: relative;
   z-index: 3;
-  background: linear-gradient(to left, rgb(81, 221, 219) 0%, rgb(0, 195, 194) 100%);
 }
-.asset-steps__step:nth-of-type(2) {
+.asset-steps__step:nth-of-type(2) .asset-steps__step-head,
+.asset-steps__step:nth-of-type(2) .asset-steps__step-body {
   background: linear-gradient(to left, rgb(31, 162, 255) 0%, rgb(18, 216, 250) 100%);
 }
-.asset-steps__step:nth-of-type(3) {
+.asset-steps__step:nth-of-type(3) .asset-steps__step-head,
+.asset-steps__step:nth-of-type(3) .asset-steps__step-body {
   background: linear-gradient(to left, rgb(33, 147, 176) 0%, rgb(109, 213, 237) 100%);
 }
 .asset-steps__step-head {
@@ -1771,8 +1773,10 @@ fieldset {
   align-items: center;
   gap: 0;
   padding: 2.5rem;
+  background: linear-gradient(to left, rgb(81, 221, 219) 0%, rgb(0, 195, 194) 100%);
 }
 .asset-steps__step-head h3 {
+  padding-left: 28rem;
   color: #003d3d;
   font-size: 2.4rem;
   font-weight: 700;
@@ -1783,8 +1787,11 @@ fieldset {
   font-size: 3rem;
 }
 .asset-steps__label {
-  width: 20rem;
-  height: 12rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22rem;
+  height: 9.6rem;
   background: #fff;
   color: #008080;
   display: flex;
@@ -1793,10 +1800,9 @@ fieldset {
   font-family: "Oswald", sans-serif;
   font-size: 5rem;
   font-weight: 700;
-  clip-path: path("M20 0 H150 Q200 0 200 -40 V120 H50 Q0 120 0 160 V20 Q0 0 20 0 Z");
+  border-radius: 0 0 5rem 0;
 }
 .asset-steps__step-body {
-  max-width: 80%;
   width: 100%;
   margin: 0 auto;
   display: grid;
@@ -1804,6 +1810,8 @@ fieldset {
   gap: 9.6rem;
   align-items: center;
   padding: 5rem;
+  border-radius: 5rem 0 0 0;
+  background: linear-gradient(to left, rgb(81, 221, 219) 0%, rgb(0, 195, 194) 100%);
 }
 @media (max-width: 768px) {
   .asset-steps__step-body {
@@ -1852,15 +1860,6 @@ fieldset {
 }
 .asset-steps__result p span {
   color: #008080;
-}
-.asset-steps__step--one {
-  background: linear-gradient(90deg, #14bdc2 0%, #45c6d6 100%);
-}
-.asset-steps__step--two {
-  background: linear-gradient(90deg, #2f9cec 0%, #22c2e7 100%);
-}
-.asset-steps__step--three {
-  background: linear-gradient(90deg, #3499bb 0%, #72c4dc 100%);
 }
 @media (max-width: 768px) {
   .asset-steps {

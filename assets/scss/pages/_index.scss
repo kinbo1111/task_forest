@@ -1567,7 +1567,9 @@
         }
 
         .after {
-            p, strong>span {
+
+            p,
+            strong>span {
                 background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
                 -webkit-background-clip: text;
                 background-clip: text;
@@ -1710,6 +1712,7 @@
 .asset-steps {
     position: relative;
     padding: 5rem 5rem 7.6rem;
+
     &::after {
         content: "";
         position: absolute;
@@ -1735,6 +1738,7 @@
 
     &__intro {
         max-width: 42rem;
+
         h2 {
             color: #003d3d;
             font-size: 3.4rem;
@@ -1755,6 +1759,7 @@
             line-height: 1.6;
             font-weight: 400;
             letter-spacing: 1%;
+
             span {
                 font-weight: 700;
             }
@@ -1776,7 +1781,7 @@
             font-weight: 700;
             line-height: 1.5;
 
-            & + p {
+            &+p {
                 margin-top: 1.8rem;
             }
 
@@ -1797,20 +1802,27 @@
     &__step {
         position: relative;
         z-index: 3;
-        background: linear-gradient(to left,
-            rgba(81, 221, 219, 1) 0%,
-            rgba(0, 195, 194, 1) 100%);
-            &:nth-of-type(2) {
+
+        &:nth-of-type(2) {
+
+            .asset-steps__step-head,
+            .asset-steps__step-body {
                 background: linear-gradient(to left,
-                rgba(31, 162, 255, 1) 0%,
-                rgba(18, 216, 250, 1) 100%);
-            }
-            &:nth-of-type(3) {
-                background: linear-gradient(to left,
-                rgba(33, 147, 176, 1) 0%,
-                rgba(109, 213, 237, 1) 100%);
+                        rgba(31, 162, 255, 1) 0%,
+                        rgba(18, 216, 250, 1) 100%);
             }
         }
+
+        &:nth-of-type(3) {
+
+            .asset-steps__step-head,
+            .asset-steps__step-body {
+                background: linear-gradient(to left,
+                        rgba(33, 147, 176, 1) 0%,
+                        rgba(109, 213, 237, 1) 100%);
+            }
+        }
+    }
 
     &__step-head {
         position: relative;
@@ -1818,13 +1830,18 @@
         align-items: center;
         gap: 0;
         padding: 2.5rem;
+        background: linear-gradient(to left,
+                rgba(81, 221, 219, 1) 0%,
+                rgba(0, 195, 194, 1) 100%);
 
         h3 {
+            padding-left: 28rem;
             color: #003d3d;
             font-size: 2.4rem;
             font-weight: 700;
             letter-spacing: 0;
             text-shadow: 0.5px 0.5px 0 white;
+
             span {
                 font-size: 3rem;
             }
@@ -1832,27 +1849,23 @@
     }
 
     &__label {
-        // position: absolute;
-        // left: 0;
-        // top: 0;
-        width: 20rem;
-        height: 12rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 22rem;
+        height: 9.6rem;
         background: #fff;
         color: #008080;
-      
         display: flex;
         align-items: center;
         justify-content: center;
-      
         font-family: "Oswald", sans-serif;
         font-size: 5rem;
         font-weight: 700;
-      
-        clip-path: path("M20 0 H150 Q200 0 200 -40 V120 H50 Q0 120 0 160 V20 Q0 0 20 0 Z");
-      }
+        border-radius: 0 0 5rem 0;
+    }
 
     &__step-body {
-        max-width: 80%;
         width: 100%;
         margin: 0 auto;
         display: grid;
@@ -1860,6 +1873,11 @@
         gap: 9.6rem;
         align-items: center;
         padding: 5rem;
+        border-radius: 5rem 0 0 0;
+        background: linear-gradient(to left,
+                rgba(81, 221, 219, 1) 0%,
+                rgba(0, 195, 194, 1) 100%);
+
         @include md {
             max-width: 100%;
         }
@@ -1867,6 +1885,7 @@
 
     &__visual {
         position: relative;
+
         img {
             width: auto;
             height: 20rem;
@@ -1909,22 +1928,11 @@
             font-size: 1.6rem;
             font-weight: 700;
             line-height: 1.5;
+
             span {
                 color: #008080;
             }
         }
-    }
-
-    &__step--one {
-        background: linear-gradient(90deg, #14bdc2 0%, #45c6d6 100%);
-    }
-
-    &__step--two {
-        background: linear-gradient(90deg, #2f9cec 0%, #22c2e7 100%);
-    }
-
-    &__step--three {
-        background: linear-gradient(90deg, #3499bb 0%, #72c4dc 100%);
     }
 
     @include md {
@@ -1969,7 +1977,7 @@
                 font-size: 1rem;
                 line-height: 1.55;
 
-                & + p {
+                &+p {
                     margin-top: 1.2rem;
                 }
 
