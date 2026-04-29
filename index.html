@@ -14,35 +14,36 @@
 
 <body id="top">
     <header class="header container">
-        <a href="#" class="header__logo" aria-label="task forest">
-            <img src="./assets/images/logo.png" alt="task forest">
-        </a>
-
-        <div class="header__actions">
-            <a href="#" class="header__contact">お問い合わせ</a>
-            <button class="header__menu" aria-label="メニューを開く" aria-expanded="false"
-                aria-controls="header-dropdown-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="header__dropdown" id="header-dropdown-menu" aria-label="サイトメニュー">
-                <ul class="header__dropdown-list">
-                    <li><a href="#"><span class="header__dropdown-arrow"></span>よくある課題</a></li>
-                    <li><a href="#"><span class="header__dropdown-arrow"></span>解決策</a></li>
-                    <li><a href="#"><span class="header__dropdown-arrow"></span>3つの強み</a></li>
-                    <li><a href="#"><span class="header__dropdown-arrow"></span>3つの特徴</a></li>
-                    <li><a href="#"><span class="header__dropdown-arrow"></span>導入・活用例</a></li>
-                    <li><a href="#"><span class="header__dropdown-arrow"></span>導入効果</a></li>
-                    <li><a href="#"><span class="header__dropdown-arrow"></span>導入ステップ</a></li>
-                    <li><a href="#"><span class="header__dropdown-arrow"></span>ご利用の流れ</a></li>
-                    <li><a href="#"><span class="header__dropdown-arrow"></span>よくあるご質問</a></li>
-                </ul>
-            </nav>
+        <div class="header-inner">
+            <a href="#top" class="header__logo" aria-label="task forest">
+                <img src="./assets/images/logo.png" alt="task forest">
+            </a>
+            <div class="header__actions">
+                <a href="#contact-form" class="header__contact">お問い合わせ</a>
+                <button class="header__menu" aria-label="メニューを開く" aria-expanded="false"
+                    aria-controls="header-dropdown-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="header__dropdown" id="header-dropdown-menu" aria-label="サイトメニュー">
+                    <ul class="header__dropdown-list">
+                        <li><a href="#"><span class="header__dropdown-arrow"></span>よくある課題</a></li>
+                        <li><a href="#"><span class="header__dropdown-arrow"></span>解決策</a></li>
+                        <li><a href="#"><span class="header__dropdown-arrow"></span>3つの強み</a></li>
+                        <li><a href="#"><span class="header__dropdown-arrow"></span>3つの特徴</a></li>
+                        <li><a href="#"><span class="header__dropdown-arrow"></span>導入・活用例</a></li>
+                        <li><a href="#"><span class="header__dropdown-arrow"></span>導入効果</a></li>
+                        <li><a href="#"><span class="header__dropdown-arrow"></span>導入ステップ</a></li>
+                        <li><a href="#"><span class="header__dropdown-arrow"></span>ご利用の流れ</a></li>
+                        <li><a href="#"><span class="header__dropdown-arrow"></span>よくあるご質問</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
-        <section class="kv">
+        <section id="kv" class="kv">
             <div class="kv__inner container">
                 <div class="kv__content">
                     <div class="kv__copy">
@@ -78,7 +79,7 @@
                 </div>
             </div>
         </section>
-        <section class="feature-strip">
+        <section id="feature-strip" class="feature-strip">
             <div class="feature-strip__inner container">
                 <article class="feature-strip__item">
                     <h2 class="text-gradient">マニュアル<span class="text-40">不要</span></h2>
@@ -94,7 +95,7 @@
                 </article>
             </div>
         </section>
-        <section class="risk-panel">
+        <section id="risk-panel" class="risk-panel">
             <div class="risk-panel__inner container">
                 <h2 class="risk-panel__title">
                     「<span class="risk-panel__term"><span class="risk-panel__term-char">退</span><span
@@ -149,7 +150,7 @@
                 <p class="trial-cta__caption">※貴社の業務に合わせた「属人化リスク診断＆シミュレーション」を無料作成</p>
             </div>
         </section>
-        <section class="asset-mechanism">
+        <section id="asset-mechanism" class="asset-mechanism">
             <div class="asset-mechanism__inner container">
                 <h2 class="asset-mechanism__title">
                     <span class="asset-mechanism__title-main">「<span
@@ -215,7 +216,7 @@
                 </div>
             </div>
         </section>
-        <section class="feature-details">
+        <section id="feature-details" class="feature-details">
             <div class="feature-details__inner container">
                 <h2 class="feature-details__title">
                     管理を捨てて、標準化を。<br>
@@ -299,7 +300,7 @@
                 <p class="trial-cta__caption">※貴社の業務に合わせた「属人化リスク診断＆シミュレーション」を無料作成</p>
             </div>
         </section>
-        <section class="use-case">
+        <section id="use-case" class="use-case">
             <div class="use-case__inner container">
                 <p class="use-case__eyebrow">use case</p>
                 <h2 class="use-case__title">導入 / 活用例</h2>
@@ -386,7 +387,7 @@
                 </div>
             </div>
         </section>
-        <section class="effect-sim">
+        <section id="effect-sim" class="effect-sim">
             <div class="effect-sim__inner container">
                 <img class="effect-sim__logo" src="./assets/images/logo.png" alt="task forest">
                 <h2 class="effect-sim__title">「属人化」が招く損失を、<span class="text-30">企業の「資産」</span>へ。</h2>
@@ -480,7 +481,7 @@
                 <p class="trial-cta__caption">※貴社の業務に合わせた「属人化リスク診断＆シミュレーション」を無料作成</p>
             </div>
         </section>
-        <section class="asset-steps">
+        <section id="asset-steps" class="asset-steps">
             <div class="asset-steps__inner container">
                 <div class="asset-steps__header">
                     <div class="asset-steps__intro">
@@ -562,7 +563,7 @@
                 </article>
             </div>
         </section>
-        <section class="flow">
+        <section id="flow" class="flow">
             <div class="flow__inner container">
                 <p class="flow__eyebrow">FLOW</p>
                 <h2 class="flow__title">ご利用の流れ</h2>
@@ -614,7 +615,7 @@
                 </div>
             </div>
         </section>
-        <section class="faq">
+        <section id="faq" class="faq">
             <div class="faq__inner container">
                 <div class="faq__header">
                     <p class="faq__eyebrow">FAQ</p>
@@ -767,7 +768,7 @@
                 </article>
             </div>
         </section>
-        <section class="contact-form">
+        <section id="contact-form" class="contact-form">
             <div class="contact-form__promo">
                 <div class="contact-form__promo-inner container">
                     <h3 class="contact-form__promo-title">退職リスクに怯える経営から、資産が積み上がる経営へ</h3>
@@ -957,11 +958,46 @@
 
     <script>
         (() => {
+            const initSmoothAnchorScroll = () => {
+                const header = document.querySelector(".header");
+                const anchorLinks = document.querySelectorAll('a[href^="#"]');
+                if (!anchorLinks.length) return;
+
+                anchorLinks.forEach((link) => {
+                    link.addEventListener("click", (event) => {
+                        const href = link.getAttribute("href");
+                        if (!href || href === "#") {
+                            event.preventDefault();
+                            return;
+                        }
+
+                        const target = document.querySelector(href);
+                        if (!target) return;
+
+                        event.preventDefault();
+                        const headerHeight = header ? header.offsetHeight : 0;
+                        const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+                        window.scrollTo({
+                            top: Math.max(targetTop, 0),
+                            behavior: "smooth",
+                        });
+                    });
+                });
+            };
+
             const initHeaderMenu = () => {
+                const header = document.querySelector(".header");
                 const menuButton = document.querySelector(".header__menu");
                 const dropdown = document.querySelector(".header__dropdown");
 
-                if (!menuButton || !dropdown) return;
+                if (!header || !menuButton || !dropdown) return;
+
+                const syncHeaderScrollState = () => {
+                    header.classList.toggle("is-scrolled", window.scrollY > 0);
+                };
+
+                syncHeaderScrollState();
+                window.addEventListener("scroll", syncHeaderScrollState, { passive: true });
 
                 const closeMenu = () => {
                     menuButton.classList.remove("is-open");
@@ -1156,6 +1192,7 @@
                 });
             };
 
+            initSmoothAnchorScroll();
             initHeaderMenu();
             initFaq();
             initToTopButton();

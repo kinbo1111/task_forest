@@ -5,9 +5,11 @@
 }
 
 html {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
   font-size: 0.69444vw;
   font-size: clamp(6px, 0.69444vw, 10px);
-  margin: 0;
 }
 @media (max-width: 576px) {
   html {
@@ -232,6 +234,7 @@ fieldset {
   align-items: flex-start;
   justify-content: space-between;
   min-height: 100vh;
+  border-radius: 5rem 0 0 0;
 }
 @media (max-width: 768px) {
   .kv__inner {
@@ -2767,22 +2770,54 @@ fieldset {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+.header-inner {
+  position: relative;
+  overflow: hidden;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 999;
-  padding: 1rem 5rem;
+  background: linear-gradient(to left, rgba(81, 221, 219, 0.65) 0%, rgba(0, 195, 194, 0.65) 100%);
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+}
+.header-inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.35s ease;
+  z-index: 0;
+}
+.header-inner > * {
+  position: relative;
+  z-index: 1;
+}
+.header.is-scrolled .header-inner {
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.08);
+}
+.header.is-scrolled .header-inner::before {
+  transform: scaleX(1);
 }
 .header__logo {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 20.2rem;
+  max-width: 24rem;
+  background-color: white;
+  height: 8rem;
+  border-radius: 0 0 5rem 0;
+  padding: 1rem 0;
 }
 .header__logo img {
-  width: 100%;
+  width: 20.2rem;
   height: 100%;
   object-fit: contain;
 }
@@ -2891,6 +2926,10 @@ fieldset {
 }
 .header__dropdown-list a:hover {
   opacity: 0.75;
+}
+
+body {
+  padding-top: 8rem;
 }
 
 .footer {
