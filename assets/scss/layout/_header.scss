@@ -18,7 +18,7 @@
                 rgba(0, 195, 194, 0.65) 100%);
       box-shadow: none;
       transition: box-shadow 0.3s ease;
-
+      padding-left: 0;
       &::before {
         content: "";
         position: absolute;
