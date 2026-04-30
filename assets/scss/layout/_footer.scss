@@ -92,7 +92,7 @@
     &__to-top {
         position: absolute;
         right: 3.2rem;
-        top: 13%;
+        bottom: 18%;
         width: 100px;
         height: 100px;
         border-radius: 50%;
@@ -108,7 +108,7 @@
         visibility: hidden;
         pointer-events: none;
         transform: translateY(1rem);
-        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+        transition: opacity 2s ease, transform 2s ease, visibility 2s ease;
 
         &.is-visible {
             opacity: 1;
