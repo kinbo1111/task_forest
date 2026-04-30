@@ -680,7 +680,6 @@
         .focus {
             color: #008080;
             font-size: 3rem;
-            background: linear-gradient(transparent 80%, #ffe44b 60%);
             @include md {
                 font-size: 24px;
             }
@@ -1065,7 +1064,6 @@
 
             span {
                 font-size: 2.4rem;
-                background: linear-gradient(transparent 70%, #ffe44b 70%);
             }
         }
     }
@@ -1655,6 +1653,10 @@
 
             span {
                 color: #008080;
+            }
+
+            .highlight {
+                color: #003d3d !important;
             }
         }
     }
