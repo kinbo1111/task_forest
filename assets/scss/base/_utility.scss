@@ -22,6 +22,10 @@
 
 .text-38 {
     font-size: 3.8rem;
+    
+    @include md {
+        font-size: 24px;
+    }
 }
 
 .text-34 {
@@ -36,6 +40,13 @@
 
     @include md {
         font-size: 24px;
+    }
+}
+
+.text-30-sp {
+    font-size: 3rem;
+    @include md {
+        font-size: 20px;
     }
 }
 
