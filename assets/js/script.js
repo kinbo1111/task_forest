@@ -80,6 +80,15 @@ wow.init();
         document.addEventListener("keydown", (event) => {
             if (event.key === "Escape") closeMenu();
         });
+
+        dropdown.addEventListener("click", (event) => {
+            const anchor = event.target.closest("a");
+            if (!anchor) return;
+            const href = anchor.getAttribute("href");
+            if (href && href.startsWith("#") && href !== "#") {
+                closeMenu();
+            }
+        });
     };
 
     const initFaq = () => {
