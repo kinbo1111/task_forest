@@ -11,7 +11,7 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        min-height: 100vh;
+        min-height: calc(100vh - 10rem);
         border-radius: 50px 0 0 0;
         @include md {
             padding: 7.5rem 2rem;
@@ -162,8 +162,8 @@
     }
 
     &__item {
-        width: 390px;
-        height: 115px;
+        width: 400px;
+        height: 125px;
         border-radius: 50%;
         background: linear-gradient(to right,
                 rgba(108, 206, 206, 0.08) 0%,

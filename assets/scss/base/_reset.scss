@@ -9,7 +9,7 @@ html {
   width: 100%;
   margin: 0 auto;
   font-size: 0.69444vw;
-  font-size: clamp(10px, 0.69444vw, 16px);
+  font-size: clamp(6px, 0.69444vw, 10px);
   @include xl {
     font-size: 0.78125vw;
   }
