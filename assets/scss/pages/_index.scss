@@ -48,7 +48,8 @@
     }
 
     &__brand {
-        width: 57rem;
+        max-width: 57rem;
+        width: 100%;
         height: 13rem;
         display: flex;
         align-items: center;
@@ -75,7 +76,7 @@
 
     &__desc {
         color: #003D3D;
-        font-size: 1.6rem;
+        font-size: 16px;
         line-height: 1.5;
         letter-spacing: 1%;
         font-weight: 500;
@@ -106,7 +107,7 @@
         color: #008080;
         padding: 1rem;
         box-shadow: inset 0 -0.6rem 0 #DEAF04;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 500;
         line-height: 1.3;
         text-align: center;
@@ -203,7 +204,7 @@
             position: absolute;
             left: 50%;
             bottom: -7.55rem;
-            width: 52rem;
+            width: 37%;
             height: 7.6rem;
             transform: translateX(-50%);
             background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
@@ -371,7 +372,7 @@
         padding: 2.8rem 3rem;
         text-align: center;
         color: #003d3d;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 700;
         line-height: 2.9rem;
         letter-spacing: 1%;
@@ -694,7 +695,7 @@
     &__text {
         margin-top: 1.4rem;
         color: #003d3d;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 1%;
@@ -862,7 +863,7 @@
         margin-top: 2.4rem;
         margin-left: 9rem;
         color: #003d3d;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 400;
         line-height: 1.7;
         letter-spacing: 1%;
@@ -922,7 +923,7 @@
         &__text {
             margin-top: 1rem;
             margin-left: 0;
-            font-size: 1.3rem;
+            font-size: 13px;
             line-height: 1.7;
         }
 
@@ -976,7 +977,8 @@
         }
 
         &-visual {
-            width: 50rem;
+            max-width: 50rem;
+            width: 100%;
             height: 30rem;
             overflow: hidden;
             display: flex;
@@ -993,7 +995,7 @@
 
     &__company {
         color: #002020;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 700;
 
     }
@@ -1020,7 +1022,7 @@
 
     &__issue-title {
         color: #003d3d;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 700;
 
         padding-bottom: 1rem;
@@ -1030,7 +1032,7 @@
     &__issue-text {
         margin-top: 1rem;
         color: #003d3d;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 400;
         line-height: 1.6;
     }
@@ -1118,7 +1120,7 @@
         p {
             margin-top: 1.2rem;
             color: #003d3d;
-            font-size: 1.6rem;
+            font-size: 16px;
             line-height: 1.55;
             text-align: left;
             font-weight: 400;
@@ -1188,7 +1190,7 @@
         padding: 0.5rem 3.3rem;
         border-radius: 1.7rem;
         color: #008080;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 700;
         background-color: white;
     }
@@ -1218,7 +1220,7 @@
 
         p {
             color: #003d3d;
-            font-size: 1.6rem;
+            font-size: 16px;
             font-weight: 400;
             line-height: 1.45;
         }
@@ -1480,7 +1482,7 @@
 
     &__note {
         color: #003d3d;
-        font-size: 1.6rem;
+        font-size: 16px;
         line-height: 1.6;
         text-align: center;
         width: 100%;
@@ -1522,7 +1524,7 @@
             position: relative;
             padding-left: 1.2rem;
             color: #003d3d;
-            font-size: 1.6rem;
+            font-size: 16px;
             line-height: 1.45;
 
             font-weight: 400;
@@ -1560,7 +1562,7 @@
 
         p {
             color: #003d3d;
-            font-size: 1.6rem;
+            font-size: 16px;
             font-weight: 700;
         }
 
@@ -1578,7 +1580,7 @@
 
         strong {
             color: #003d3d;
-            font-size: 1.6rem;
+            font-size: 16px;
             font-weight: 500;
             line-height: 1;
             letter-spacing: 0;
@@ -1676,7 +1678,7 @@
             gap: 0.5rem;
 
             p {
-                font-size: 1.6rem;
+                font-size: 16px;
             }
 
             strong {
@@ -1753,7 +1755,7 @@
         p {
             margin-top: 2rem;
             color: #003d3d;
-            font-size: 1.6rem;
+            font-size: 16px;
             line-height: 1.6;
             font-weight: 400;
             letter-spacing: 1%;
@@ -1833,7 +1835,7 @@
                 rgba(0, 195, 194, 1) 100%);
 
         h3 {
-            padding-left: 28rem;
+            padding-left: 20%;
             color: #003d3d;
             font-size: 2.4rem;
             font-weight: 700;
@@ -1915,7 +1917,7 @@
         width: 100%;
         p {
             color: #003d3d;
-            font-size: 1.6rem;
+            font-size: 16px;
             line-height: 1.75;
             font-weight: 400;
             letter-spacing: 1%;
@@ -1945,7 +1947,7 @@
         p {
             margin-top: 0.8rem;
             color: #003d3d;
-            font-size: 1.6rem;
+            font-size: 16px;
             font-weight: 700;
             line-height: 1.5;
 
@@ -2023,7 +2025,7 @@
             padding: 0 1.2rem;
 
             h3 {
-                font-size: 1.6rem;
+                font-size: 16px;
                 line-height: 1.45;
             }
         }
@@ -2111,7 +2113,7 @@
         margin-top: 3.2rem;
         text-align: center;
         color: #003d3d;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 700;
         line-height: 1.5;
         letter-spacing: 8%;
@@ -2194,7 +2196,7 @@
 
     &__step-title {
         color: #008080;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 700;
         line-height: 1.35;
 
@@ -2208,7 +2210,7 @@
 
     &__text {
         color: #003d3d;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 400;
         line-height: 1.8;
         padding: 5rem 0;
@@ -2235,7 +2237,7 @@
 
         &__lead {
             margin-top: 0.9rem;
-            font-size: 1.3rem;
+            font-size: 13px;
 
             span {
                 font-size: 2.2rem;
@@ -2279,7 +2281,7 @@
         }
 
         &__step-title {
-            font-size: 1.6rem;
+            font-size: 16px;
         }
 
         &__step-icon {
@@ -2338,7 +2340,7 @@
         border: 0;
         background: transparent;
         color: #008080;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 700;
         display: inline-flex;
         align-items: center;
@@ -2470,7 +2472,7 @@
     }
 
     &__text {
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 500;
         color: #003D3D;
         line-height: 1.5;
@@ -2509,7 +2511,7 @@
         transition: max-height 0.3s ease;
 
         &__text {
-            font-size: 1.6rem;
+            font-size: 16px;
             line-height: 1.5;
             color: #002020;
             font-weight: 400;
@@ -2553,10 +2555,9 @@
     }
 }
 
-
 /* contact-form */
 .contact-form {
-    padding: 4.5rem 5rem 10rem;
+    padding: 4.5rem 0 10rem;
 
     &__promo {
         background: #008080;
@@ -2582,7 +2583,7 @@
 
     &__promo-text {
         color: #fff;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 500;
         line-height: 5rem;
         text-align: left;
@@ -2613,7 +2614,7 @@
         align-items: center;
         justify-content: center;
         padding: 1.2rem;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 500;
         box-shadow: inset 0 -0.6rem 0 #dcb108;
         line-height: 1;
@@ -2670,6 +2671,9 @@
         -webkit-text-fill-color: transparent;
         color: transparent;
         opacity: 0.2;
+        @include md {
+            font-size: 100px;
+        }
     }
 
     &__title {
@@ -2677,6 +2681,10 @@
         color: #008080;
         font-size: 2.4rem;
         font-weight: 700;
+        @include md {
+            font-size: 18px;
+            margin-top: -40px;
+        }
     }
 
     &__lead {
@@ -2684,7 +2692,7 @@
         color: #003D3D;
         font-size: 3.4rem;
         font-weight: 700;
-        line-height: 2.5rem;
+        line-height: 1.2;
 
 
         .number {
@@ -2711,7 +2719,7 @@
     &__sub {
         margin-top: 2rem;
         color: #003d3d;
-        font-size: 1.6rem;
+        font-size: 16px;
         line-height: 1.5;
         font-weight: 400;
         letter-spacing: 1%;
@@ -2719,10 +2727,14 @@
 
     &__panel {
         border-radius: 5rem;
-        padding: 9.1rem 10rem;
+        padding: 9.1rem 5rem;
+        width: 100%;
         background: linear-gradient(to right,
                 rgba(108, 206, 206, 0.8) 0%,
                 rgba(0, 217, 245, 0.7) 100%);
+        @include md {
+            padding: 6rem 1.5rem 7rem;
+        }
     }
 
     &__row {
@@ -2730,7 +2742,14 @@
         grid-template-columns: 18rem 1fr;
         gap: 1.6rem;
         align-items: start;
-        margin-bottom: 2.5rem;
+        max-width: 120rem;
+        width: 100%;
+        margin: 0 auto 25px auto;
+        @include md {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin: 0 auto 1.5rem auto;
+        }
     }
 
     &__label {
@@ -2740,18 +2759,23 @@
         column-gap: 1rem;
         row-gap: 0.2rem;
         color: #003d3d;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 700;
         line-height: 1.6rem;
-
         padding-top: 1.5rem;
         white-space: nowrap;
 
         small {
             display: block;
             grid-column: 1;
-            font-size: 1.3rem;
+            font-size: 13px;
             font-weight: 500;
+        }
+        @include md {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 15px;
         }
     }
 
@@ -2761,14 +2785,13 @@
         justify-content: center;
         margin-left: 0.8rem;
         min-width: 5rem;
-        height: 2rem;
+        padding: 2px 11px;
         border-radius: 2rem;
         background: #FFFFFF;
         color: #008080;
-        font-size: 1.4rem;
+        font-size: 14px;
         font-weight: 500;
         line-height: 1;
-
         grid-column: 2;
         grid-row: 1 / span 2;
         align-self: center;
@@ -2788,7 +2811,7 @@
         padding: 1.7rem 3.5rem;
         background: rgba(255, 255, 255, 0.8);
         color: #003d3d;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
 
@@ -2803,12 +2826,16 @@
             flex-wrap: wrap;
             align-items: center;
             gap: 0.8rem 2rem;
-
+            @include sm {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
             label {
                 display: inline-flex;
                 align-items: center;
                 gap: 1rem;
-                font-size: 1.6rem;
+                font-size: 16px;
                 font-weight: 400;
                 color: #008080;
             }
@@ -2879,7 +2906,7 @@
         justify-content: center;
         align-items: center;
         gap: 0.8rem;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 400;
         color: #008080;
 
@@ -2927,7 +2954,7 @@
         border-radius: 4.5rem;
         background: #FFE44B;
         color: #008080;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 700;
         box-shadow: inset 0 -0.6rem 0 #DEAF04, 0 0.2rem 0.6rem rgba(0, 0, 0, 0.15);
         display: flex;
@@ -2951,87 +2978,8 @@
             border-bottom: 0.4rem solid #008080;
             transition: transform 0.2s ease;
         }
-    }
-
-    @include md {
-        padding: 4rem 2rem 7rem;
-
-        &__promo {
-            padding: 2.4rem 1.6rem 2rem;
-            margin-bottom: 3rem;
-        }
-
-        &__promo-title {
-            font-size: 4.2rem;
-        }
-
-        &__promo-row {
-            margin-top: 1.6rem;
-            flex-direction: column;
-            align-items: stretch;
-            gap: 1.6rem;
-        }
-
-        &__promo-text {
-            font-size: 2rem;
-            text-align: center;
-        }
-
-        &__promo-cta {
-            width: 100%;
-            min-height: 7.4rem;
-            font-size: 2.8rem;
-            padding: 1.2rem 5rem 1.2rem 2.4rem;
-        }
-
-        &__promo-cta-note {
-            font-size: 2rem;
-        }
-
-        &__promo-caption {
-            font-size: 1.5rem;
-        }
-
-        &__eyebrow {
-            font-size: 7rem;
-        }
-
-        &__title {
-            font-size: 3rem;
-        }
-
-        &__lead {
-            font-size: 3.2rem;
-        }
-
-        &__panel {
-            padding: 3rem 2rem;
-        }
-
-        &__row {
-            grid-template-columns: 1fr;
-            gap: 0.8rem;
-        }
-
-        &__label {
-            font-size: 1.8rem;
-            padding-top: 0;
-        }
-
-        &__submit {
-            width: 100%;
-            font-size: 3.6rem;
-            min-height: 6.4rem;
-            padding: 0 6rem 0 2.8rem;
-
-            span {
-                right: 2.4rem;
-                font-size: 3.2rem;
-            }
-        }
-
-        &__agree {
-            font-size: 2rem;
+        @include md {
+            height: 8.5rem;
         }
     }
 }

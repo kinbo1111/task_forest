@@ -9,7 +9,16 @@ html {
   width: 100%;
   margin: 0 auto;
   font-size: 0.69444vw;
-  font-size: clamp(6px, 0.69444vw, 10px);
+  font-size: clamp(10px, 0.69444vw, 16px);
+  @include xl {
+    font-size: 0.78125vw;
+  }
+  @include lg {
+    font-size: 0.9765vw;
+  }
+  @include md {
+    font-size: 1.30208vw;
+  }
   @include sm {
     font-size: 1.7361vw;
   }

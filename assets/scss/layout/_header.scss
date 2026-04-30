@@ -226,8 +226,10 @@
       position: relative;
       align-items: center;
       justify-content: center;
-      margin-top: 3.5rem;
+      margin: 3.5rem auto 0 auto;
+      max-width: 35.5rem;
       width: 100%;
+      height: 8.5rem;
       border-radius: 4.5rem;
       background: #FFE44B;
       color: #008080;
@@ -245,7 +247,7 @@
       &::after {
         content: "";
         position: absolute;
-        right: 1.8rem;
+        right: 3.6rem;
         top: 50%;
         width: 1.5rem;
         height: 1.5rem;
@@ -268,17 +270,18 @@
         display: inline-block;
         align-items: baseline;
         line-height: 1.3;
+        margin-bottom: 1rem;
       }
 
       &-num {
-        font-size: 1.6rem;
-        font-weight: 700;
+        font-size: 3rem;
+        font-weight: 500;
         line-height: 1.3;
       }
 
       &-unit,
       &-em {
-        font-size: 1.6rem;
+        font-size: 2rem;
         font-weight: 700;
         line-height: 1.3;
       }
