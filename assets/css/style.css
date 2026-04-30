@@ -1094,6 +1094,7 @@ fieldset {
 @media (max-width: 768px) {
   .feature-details__item-title {
     font-size: 20px;
+    margin-bottom: 0.2rem;
   }
 }
 .feature-details__item-title span {
