@@ -2420,6 +2420,7 @@ fieldset {
   text-align: center;
   text-shadow: 0.5px 0.5px 0 #fff;
   letter-spacing: 1%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 @media (max-width: 768px) {
   .contact-form__promo-cta {
@@ -2444,6 +2445,14 @@ fieldset {
   transform: translateY(-50%) rotate(-45deg);
   border-right: 0.4rem solid #008080;
   border-bottom: 0.4rem solid #008080;
+  transition: transform 0.3s ease, right 0.3s ease;
+}
+.contact-form__promo-cta:hover {
+  transform: translateY(4px);
+  box-shadow: unset;
+}
+.contact-form__promo-cta:hover::after {
+  right: 4.4rem;
 }
 .contact-form__promo-caption {
   margin-top: 14px;
@@ -2747,6 +2756,7 @@ fieldset {
   padding: 0 3.3rem;
   text-shadow: 0.5px 0.5px 0 #fff;
   letter-spacing: 1%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .contact-form__submit::after {
   content: "";
@@ -2758,7 +2768,14 @@ fieldset {
   height: 1.5rem;
   border-right: 0.4rem solid #008080;
   border-bottom: 0.4rem solid #008080;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease, right 0.3s ease;
+}
+.contact-form__submit:hover {
+  transform: translateY(4px);
+  box-shadow: unset;
+}
+.contact-form__submit:hover::after {
+  right: 6.9rem;
 }
 @media (max-width: 768px) {
   .contact-form__submit {
