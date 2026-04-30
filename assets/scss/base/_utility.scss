@@ -26,6 +26,9 @@
 
 .text-34 {
     font-size: 3.4rem;
+    @include md {
+        font-size: 28px;
+    }
 }
 
 .text-30 {
@@ -104,18 +107,18 @@
     font-weight: 900;
 }
 
-.sp {
+.sp-only {
     display: none;
 
     @include md {
-        display: block;
+        display: block !important;
     }
 }
 
-.pc {
+.pc-only {
     display: block;
     @include md {
-        display: none;
+        display: none !important;
     }
 }
 

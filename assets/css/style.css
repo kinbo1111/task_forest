@@ -176,6 +176,11 @@ fieldset {
 .text-34 {
   font-size: 3.4rem;
 }
+@media (max-width: 768px) {
+  .text-34 {
+    font-size: 28px;
+  }
+}
 
 .text-30 {
   font-size: 3rem;
@@ -257,21 +262,21 @@ fieldset {
   font-weight: 900;
 }
 
-.sp {
+.sp-only {
   display: none;
 }
 @media (max-width: 768px) {
-  .sp {
-    display: block;
+  .sp-only {
+    display: block !important;
   }
 }
 
-.pc {
+.pc-only {
   display: block;
 }
 @media (max-width: 768px) {
-  .pc {
-    display: none;
+  .pc-only {
+    display: none !important;
   }
 }
 
@@ -298,7 +303,7 @@ fieldset {
 
 /* kv */
 .kv {
-  padding: 0 5rem;
+  position: relative;
 }
 .kv__inner {
   background: linear-gradient(to left, rgba(81, 221, 219, 0.65) 0%, rgba(0, 195, 194, 0.65) 100%);
@@ -312,6 +317,7 @@ fieldset {
 }
 @media (max-width: 768px) {
   .kv__inner {
+    padding: 7.5rem 2rem;
     flex-direction: column;
   }
 }
@@ -429,21 +435,18 @@ fieldset {
 
 /* feature-strip */
 .feature-strip {
-  padding: 2.1rem 5.1rem;
+  padding: 25px 0;
 }
 .feature-strip__inner {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
-@media (max-width: 768px) {
-  .feature-strip__inner {
-    grid-template-columns: 1fr;
-  }
-}
 .feature-strip__item {
-  width: 39rem;
-  height: 11.5rem;
+  width: 390px;
+  height: 115px;
   border-radius: 50%;
   background: linear-gradient(to right, rgba(108, 206, 206, 0.08) 0%, rgba(0, 217, 245, 0.07) 100%);
   box-shadow: 0.1rem 0.3rem 0.78rem 0 rgba(0, 0, 0, 0.2);
@@ -462,14 +465,26 @@ fieldset {
   font-size: 3.5rem;
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  .feature-strip__item h2 {
+    font-size: 30px;
+  }
+}
 .feature-strip__item p {
   font-size: 2rem;
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  .feature-strip__item p {
+    font-size: 16px;
+  }
+}
 
 /* risk-panel */
 .risk-panel {
+  position: relative;
   padding: 5rem 1rem;
+  overflow: hidden;
 }
 .risk-panel__inner {
   background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
@@ -478,13 +493,18 @@ fieldset {
   position: relative;
   overflow: visible;
 }
+@media (max-width: 768px) {
+  .risk-panel__inner {
+    padding: 5rem 2rem 8rem;
+  }
+}
 .risk-panel__inner::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -7.55rem;
+  bottom: -5.9rem;
   width: 37%;
-  height: 7.6rem;
+  height: 6rem;
   transform: translateX(-50%);
   background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
   clip-path: polygon(0 0, 100% 0, 50% 100%);
@@ -496,12 +516,22 @@ fieldset {
   line-height: 1.35;
   color: #002020;
 }
+@media (max-width: 768px) {
+  .risk-panel__title {
+    font-size: 18px;
+  }
+}
 .risk-panel__term {
   display: inline-flex;
   align-items: center;
   gap: 0.2rem;
   font-size: 4rem;
   line-height: 1;
+}
+@media (max-width: 768px) {
+  .risk-panel__term {
+    font-size: 30px;
+  }
 }
 .risk-panel__term-char {
   position: relative;
@@ -528,24 +558,20 @@ fieldset {
   position: relative;
   display: grid;
   padding: 8rem 0 4.8rem;
-  gap: 6rem;
+}
+@media (max-width: 768px) {
+  .risk-panel__issues {
+    padding: 4rem 0 2.8rem;
+  }
 }
 .risk-panel__issue {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
-.risk-panel__issue.reverse::after {
-  content: "";
-  background-image: url(../images/risk2.png);
-  position: absolute;
-  left: unset;
-  right: -5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 35.2rem;
-  height: 27.9rem;
+.risk-panel__issue.reverse {
+  justify-content: flex-end;
 }
 .risk-panel__issue.reverse .risk-panel__bubble::before {
   border-left: none;
@@ -559,38 +585,36 @@ fieldset {
   right: -0.4rem;
   height: 9.7rem;
 }
-.risk-panel__issue:last-child::after {
-  background-image: url(../images/risk3.png);
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 25.9rem;
-  height: 19.8rem;
+.risk-panel__issue.reverse .risk-panel__issue-visual {
+  width: 35rem;
 }
-.risk-panel__issue::after {
-  content: "";
-  background-image: url(../images/risk1.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.risk-panel__issue:nth-of-type(3) .risk-panel__issue-visual {
+  width: 26rem;
+}
+.risk-panel__issue-visual {
   width: 29rem;
-  height: 22rem;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  height: auto;
+}
+.risk-panel__issue-visual img {
+  width: 100%;
 }
 .risk-panel__bubble {
-  max-width: 60rem;
-  width: 100%;
+  position: relative;
+  width: 44%;
   background: #fff;
   border-radius: 49px;
-  padding: 1.8rem 4.8rem;
+  padding: 18px 48px;
   color: #008080;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
-  position: relative;
+  word-wrap: normal;
+}
+@media (max-width: 768px) {
+  .risk-panel__bubble {
+    width: 56%;
+    font-size: 16px;
+  }
 }
 .risk-panel__bubble::after {
   content: "";
@@ -604,6 +628,12 @@ fieldset {
   border-radius: 70px;
   clip-path: inset(5px 0 0 0 round 18% 31% 33% 33%/18% 10% 10% 13%);
 }
+@media (max-width: 768px) {
+  .risk-panel__bubble::after {
+    height: 4.4rem;
+    border-radius: 999px;
+  }
+}
 .risk-panel__bubble::before {
   content: "";
   position: absolute;
@@ -613,6 +643,12 @@ fieldset {
   height: 2rem;
   border-left: 1.5px solid #008080;
   transform: rotate(30deg);
+}
+@media (max-width: 768px) {
+  .risk-panel__bubble::before {
+    bottom: -1.6rem;
+    height: 1.4rem;
+  }
 }
 .risk-panel__bubble span {
   color: #003D3D;
@@ -629,7 +665,7 @@ fieldset {
   color: #003d3d;
   font-size: 16px;
   font-weight: 700;
-  line-height: 2.9rem;
+  line-height: 1.8;
   letter-spacing: 1%;
 }
 .risk-panel__footer-text {
@@ -637,8 +673,13 @@ fieldset {
   color: #003d3d;
   font-size: 2rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.8;
   letter-spacing: 1%;
+}
+@media (max-width: 768px) {
+  .risk-panel__footer-text {
+    font-size: 16px;
+  }
 }
 .risk-panel__footer-text span {
   position: relative;
@@ -2753,6 +2794,11 @@ fieldset {
   padding-right: 7.1rem;
   gap: 2.4rem;
 }
+@media (max-width: 768px) {
+  .header__actions {
+    padding-right: 0;
+  }
+}
 .header__contact {
   width: 15rem;
   height: 3.733rem;
@@ -3270,7 +3316,7 @@ body {
 
 .highlight {
   display: inline-block;
-  background: linear-gradient(transparent 66%, #FFE44B 66%);
+  background: linear-gradient(transparent 80%, #FFE44B 80%);
 }
 
 .underline-reveal {

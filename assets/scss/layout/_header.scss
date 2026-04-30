@@ -68,6 +68,9 @@
     position: relative;
     padding-right: 7.1rem;
     gap: 2.4rem;
+    @include md {
+      padding-right: 0;
+    }
   }
 
   &__contact {
