@@ -12,7 +12,7 @@
         align-items: flex-start;
         justify-content: space-between;
         min-height: 100vh;
-        border-radius: 5rem 0 0 0;
+        border-radius: 50px 0 0 0;
         @include md {
             flex-direction: column;
         }
@@ -55,7 +55,7 @@
         align-items: center;
         justify-content: center;
         background: #fff;
-        border-radius: 3rem;
+        border-radius: 30px;
         padding: 2rem 3rem;
         margin-top: 1.2rem;
         margin-bottom: 2rem;
@@ -99,7 +99,7 @@
         width: 100%;
         max-width: 46rem;
         background: #FFE44B;
-        border-radius: 4.5rem;
+        border-radius: 45px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -194,7 +194,7 @@
 
     &__inner {
         background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
-        border-radius: 5rem;
+        border-radius: 50px;
         padding: 5rem 5rem 8rem;
         position: relative;
         overflow: visible;
@@ -324,7 +324,7 @@
         max-width: 60rem;
         width: 100%;
         background: #fff;
-        border-radius: 4.9rem;
+        border-radius: 49px;
         padding: 1.8rem 4.8rem;
         color: #008080;
         font-size: 2rem;
@@ -342,7 +342,7 @@
             width: 100%;
             height: 6.6rem;
             border: 1px solid #008080;
-            border-radius: 7rem;
+            border-radius: 70px;
             clip-path: inset(5px 0 0 0 round 18% 31% 33% 33% / 18% 10% 10% 13%);
         }
 
@@ -368,7 +368,7 @@
         margin: 2rem auto 6rem;
         background: #fff;
         border: 0.2rem solid #ffe44b;
-        border-radius: 2rem;
+        border-radius: 20px;
         padding: 2.8rem 3rem;
         text-align: center;
         color: #003d3d;
@@ -419,7 +419,7 @@
 
         &__inner {
             padding: 2.6rem 1.6rem 2rem;
-            border-radius: 3rem;
+            border-radius: 30px;
             overflow: visible;
 
             &::after {
@@ -457,7 +457,7 @@
 
         &__visual {
             max-width: 12rem;
-            border-radius: 0.8rem;
+            border-radius: 8px;
 
             img {
                 width: 100%;
@@ -466,7 +466,7 @@
 
         &__bubble {
             font-size: 1.2rem;
-            border-radius: 2.6rem;
+            border-radius: 26px;
             padding: 1.2rem 1.4rem;
             line-height: 1.6;
             min-height: 9.8rem;
@@ -485,7 +485,7 @@
             font-size: 1rem;
             line-height: 1.75;
             padding: 1.8rem 1.4rem;
-            border-radius: 1.6rem;
+            border-radius: 16px;
         }
 
         &__footer-text {
@@ -649,7 +649,7 @@
         bottom: 0.15rem;
         display: block;
         font-family: "Oswald", sans-serif;
-        font-size: 1.4rem;
+        font-size: 14px;
         font-weight: 700;
         line-height: 1;
 
@@ -779,7 +779,7 @@
 
         &__text {
             margin-top: 1rem;
-            font-size: 1.4rem;
+            font-size: 14px;
             line-height: 1.75;
         }
     }
@@ -825,7 +825,7 @@
 
     &__body {
         min-height: 28rem;
-        border-radius: 5rem 0 0;
+        border-radius: 50px 0 0;
         background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
         padding: 3.7rem 8rem 3.7rem 3.3rem;
     }
@@ -840,7 +840,7 @@
 
         span {
             display: block;
-            font-size: 1.4rem;
+            font-size: 14px;
             margin-bottom: 0.1rem;
             letter-spacing: 1%;
         }
@@ -874,7 +874,7 @@
         right: 0;
         top: 2.4rem;
         width: 33%;
-        border-radius: 0 0 5rem 0;
+        border-radius: 0 0 50px 0;
 
         img {
             width: 100%;
@@ -901,7 +901,7 @@
 
         &__body {
             min-height: auto;
-            border-radius: 2rem;
+            border-radius: 20px;
             padding: 1.8rem 1.4rem;
         }
 
@@ -932,7 +932,7 @@
             transform: none;
             width: 100%;
             margin-top: 1rem;
-            border-radius: 1.4rem;
+            border-radius: 14px;
             box-shadow: none;
         }
     }
@@ -984,7 +984,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 3rem;
+            border-radius: 30px;
             box-shadow: 1px 3px 7px 0 rgba(0, 0, 0, 0.2);
 
             img {
@@ -1014,7 +1014,7 @@
 
     &__issue {
         margin-top: 1.8rem;
-        border-radius: 3rem;
+        border-radius: 30px;
         background: rgba(0, 130, 129, 0.3);
         border: 0.2rem solid #ffe44b;
         padding: 2.4rem 3rem;
@@ -1039,7 +1039,7 @@
 
     &__solution {
         margin-top: 3rem;
-        border-radius: 4rem;
+        border-radius: 40px;
         background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
         padding: 4rem 10rem;
     }
@@ -1096,7 +1096,7 @@
 
     &__step-card {
         min-height: 30rem;
-        border-radius: 1rem;
+        border-radius: 10px;
         border: 0.2rem solid #ffe44b;
         background: #fff;
         padding: 3.6rem 2.2rem 1.4rem 2.2rem;
@@ -1147,7 +1147,7 @@
 
     &__result {
         margin-top: 2rem;
-        border-radius: 1rem;
+        border-radius: 10px;
         border: 0.2rem solid #ffe44b;
         background: #fff;
         padding: 1.6rem 2.4rem;
@@ -1188,7 +1188,7 @@
         align-items: center;
         justify-content: center;
         padding: 0.5rem 3.3rem;
-        border-radius: 1.7rem;
+        border-radius: 17px;
         color: #008080;
         font-size: 16px;
         font-weight: 700;
@@ -1251,7 +1251,7 @@
             background: rgba(255, 255, 255, 1);
             border: 0.2rem solid #ffe44b;
             color: #008080;
-            font-size: 1.4rem;
+            font-size: 14px;
             font-weight: 400;
             line-height: 1.1;
             display: inline-flex;
@@ -1266,178 +1266,12 @@
             }
         }
     }
-
-    @include md {
-        padding: 2.4rem 1rem 0;
-
-        &__eyebrow {
-            font-size: 5.6rem;
-        }
-
-        &__title {
-            margin-top: -2.4rem;
-            font-size: 2.8rem;
-        }
-
-        &__intro {
-            margin-top: 1.6rem;
-            grid-template-columns: 1fr;
-            gap: 1.2rem;
-        }
-
-        &__intro-visual img {
-            border-radius: 1.8rem;
-        }
-
-        &__company {
-            font-size: 1.4rem;
-        }
-
-        &__quote {
-            margin-top: 0.8rem;
-            font-size: 1.8rem;
-            line-height: 1.5;
-        }
-
-        &__issue {
-            margin-top: 1rem;
-            border-radius: 1.6rem;
-            padding: 1.2rem;
-        }
-
-        &__issue-title {
-            font-size: 1.4rem;
-            padding-bottom: 0.7rem;
-        }
-
-        &__issue-text {
-            margin-top: 0.8rem;
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-
-        &__solution {
-            margin-top: 1.6rem;
-            border-radius: 2.4rem;
-            padding: 1.8rem 1rem 1.2rem;
-        }
-
-        &__solution-title {
-            font-size: 1.8rem;
-
-            img {
-                width: 2.6rem;
-            }
-
-            &::before,
-            &::after {
-                width: 1.3rem;
-                height: 0.2rem;
-            }
-        }
-
-        &__steps {
-            margin-top: 1.2rem;
-            grid-template-columns: 1fr;
-            gap: 0.8rem;
-        }
-
-        &__step-card {
-            min-height: 0;
-            border-radius: 1rem;
-            padding: 1.2rem 1.2rem 1.4rem;
-
-            h4 {
-                margin-top: 0.7rem;
-                font-size: 1.8rem;
-            }
-
-            p {
-                margin-top: 0.7rem;
-                font-size: 1rem;
-                line-height: 1.5;
-            }
-        }
-
-        &__step-icon {
-            width: 4rem;
-        }
-
-        &__step-arrow {
-            justify-self: center;
-            border-left: 1.8rem solid transparent;
-            border-right: 1.8rem solid transparent;
-            border-top: 1.4rem solid #fff;
-            border-bottom: 0;
-        }
-
-        &__result {
-            margin-top: 1rem;
-            border-radius: 1rem;
-            padding: 1rem;
-            gap: 0.8rem;
-            align-items: flex-start;
-
-            p {
-                font-size: 1.4rem;
-                line-height: 1.45;
-            }
-        }
-
-        &__result-badge {
-            width: 4.4rem;
-            height: 4.4rem;
-            font-size: 1.4rem;
-        }
-
-        &__other-label {
-            margin-top: 1rem;
-            min-width: 12rem;
-            height: 3.2rem;
-            font-size: 1.5rem;
-        }
-
-        &__other-list {
-            margin-top: 0.8rem;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 0.7rem;
-        }
-
-        &__other-card {
-            border-radius: 1.1rem;
-
-            h4 {
-                padding: 0.6rem 0.7rem 0;
-                font-size: 1rem;
-            }
-
-            p {
-                padding: 0.3rem 0.7rem 0.8rem;
-                font-size: 0.9rem;
-                line-height: 1.45;
-            }
-        }
-
-        &__other-thumb {
-            img {
-                height: 9rem;
-            }
-
-            span {
-                left: 0.5rem;
-                top: 0.5rem;
-                width: 3.2rem;
-                height: 3.2rem;
-                font-size: 0.85rem;
-            }
-        }
-    }
 }
 
 /* effect-sim */
 .effect-sim {
     position: relative;
-    padding: 13.1rem 5rem 6rem;
+    padding: 7rem 0 6rem;
 
     &__logo {
         width: 47rem;
@@ -1453,6 +1287,9 @@
         line-height: 1.45;
         letter-spacing: 2%;
         text-align: center;
+        @include md {
+            font-size: 18px;
+        }
 
         span {
             color: #008080;
@@ -1495,6 +1332,9 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1rem;
+        @include md {
+            grid-template-columns: auto;
+        }
     }
 
     &__card {
@@ -1503,11 +1343,13 @@
         background: #fff;
         padding: 2.4rem 1.8rem 2rem;
         text-align: left;
-
+        @include md {
+            padding: 3rem 2rem 2rem;
+        }
         h3 {
             margin-top: 2rem;
             color: #008080;
-            font-size: 1.8rem;
+            font-size: 18px;
             font-weight: 700;
             text-align: center;
 
@@ -1522,7 +1364,7 @@
 
         li {
             position: relative;
-            padding-left: 1.2rem;
+            padding-left: 12px;
             color: #003d3d;
             font-size: 16px;
             line-height: 1.45;
@@ -1541,16 +1383,20 @@
                 width: 1rem;
                 height: 1rem;
                 background: #003d3d;
+                margin-top: 0.6rem;
             }
         }
     }
 
     &__icon {
-        width: 13rem;
-        height: 10rem;
+        width: auto;
+        height: 100px;
         object-fit: contain;
         display: block;
         margin: 0 auto;
+        @include md {
+           
+        }
     }
 
     &__compare {
@@ -1587,13 +1433,16 @@
 
             span {
                 font-size: 4rem;
+                @include md {
+                    font-size: 40px;
+                }
             }
         }
     }
 
     &__arrow {
-        width: 1.4rem;
-        height: 3.6rem;
+        width: 14px;
+        height: 36px;
         background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
         clip-path: polygon(0 0, 100% 50%, 0 100%);
     }
@@ -1602,7 +1451,7 @@
         margin-top: 0.8rem;
         text-align: right;
         color: #003d3d;
-        font-size: 1.4rem;
+        font-size: 14px;
         font-weight: 500;
         letter-spacing: 2%;
     }
@@ -1611,99 +1460,9 @@
         margin-top: 0.8rem;
         text-align: right;
         color: #003d3d;
-        font-size: 1.4rem;
-    }
-
-    @include md {
-        padding: 2.4rem 1rem 0;
-
-        &__logo {
-            width: 18rem;
-        }
-
-        &__title {
-            margin-top: 1rem;
-            font-size: 2rem;
-            line-height: 1.55;
-        }
-
-        &__lead {
-            margin-top: 0.6rem;
-            font-size: 1.8rem;
-        }
-
-        &__note {
-            margin-top: 1rem;
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        &__cards {
-            margin-top: 1.2rem;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-        }
-
-        &__card {
-            padding: 1.2rem 1rem 1rem;
-
-            h3 {
-                margin-top: 0.6rem;
-                font-size: 1.9rem;
-            }
-
-            ul {
-                margin-top: 0.8rem;
-                padding: 1rem;
-            }
-
-            li {
-                font-size: 1rem;
-
-                &::before {
-                    top: 0.45rem;
-                    width: 0.45rem;
-                    height: 0.45rem;
-                }
-            }
-        }
-
-        &__icon {
-            width: 7.2rem;
-            height: 5.6rem;
-        }
-
-        &__compare {
-            margin-top: 0.8rem;
-            gap: 0.5rem;
-
-            p {
-                font-size: 16px;
-            }
-
-            strong {
-                font-size: 2rem;
-
-                span {
-                    font-size: 2.8rem;
-                }
-            }
-        }
-
-        &__arrow {
-            border-top: 0.8rem solid transparent;
-            border-bottom: 0.8rem solid transparent;
-            border-left: 2.2rem solid rgba(0, 130, 129, 0.3);
-        }
-
-        &__caption {
-            margin-top: 0.6rem;
-            font-size: 0.9rem;
-        }
-
-        &__footnote {
-            margin-top: 0.6rem;
-            font-size: 0.9rem;
+        font-size: 14px;
+        @include md {
+            text-align: left;
         }
     }
 }
@@ -1940,7 +1699,7 @@
             border-radius: 1.1rem;
             background: #ffe44b;
             color: #008080;
-            font-size: 1.4rem;
+            font-size: 14px;
             font-weight: 700;
         }
 
@@ -2083,9 +1842,9 @@
 
 /* flow */
 .flow {
-    padding: 4.5rem 5rem 0;
+    padding: 4.5rem 0;
     background-color: rgba(108, 206, 206, 0.2);
-    border-radius: 5rem 5rem 0 0;
+    border-radius: 50px 50px 0 0;
 
     &__eyebrow {
         text-align: center;
@@ -2099,6 +1858,9 @@
         -webkit-text-fill-color: transparent;
         color: transparent;
         opacity: 0.2;
+        @include md {
+            font-size: 100px;
+        }
     }
 
     &__title {
@@ -2107,6 +1869,10 @@
         color: #008080;
         font-size: 2.4rem;
         font-weight: 700;
+        @include md {
+            font-size: 18px;
+            margin-top: -28px;
+        }
     }
 
     &__lead {
@@ -2120,7 +1886,7 @@
 
         span {
             letter-spacing: 23%;
-            font-size: 3.5rem;
+            font-size: 35px;
         }
     }
 
@@ -2128,9 +1894,12 @@
         position: relative;
         margin-top: 3rem;
         position: relative;
-        border-radius: 5rem;
+            border-radius: 50px;
         padding: 10.4rem 10rem;
         background: rgba(255, 255, 255, 0.7);
+        @include md {
+            padding: 3rem 2.4rem;
+        }
     }
 
     &__side-word {
@@ -2139,11 +1908,12 @@
         top: 50%;
         transform: translate(-50%, -50%) rotate(-90deg);
         font-family: "Oswald", sans-serif;
-        font-size: 18rem;
+        font-size: 180px;
         line-height: 1;
         letter-spacing: 3%;
         color: rgba(0, 128, 128, 0.05);
         pointer-events: none;
+        white-space: nowrap;
     }
 
     &__item {
@@ -2153,16 +1923,25 @@
         gap: 5rem;
         align-items: center;
         z-index: 2;
-
+        @include md {
+            grid-template-columns: 1fr;
+            gap: 1.6rem;
+        }
         &:nth-of-type(1) {
             .flow__step-icon {
                 width: 8.5rem;
+                @include md {
+                    width: 60px;
+                }
             }
         }
 
         &:nth-of-type(4) {
             .flow__step-icon {
                 width: 6rem;
+                @include md {
+                    width: 45px;
+                }
             }
 
             &::after {
@@ -2180,10 +1959,14 @@
             bottom: 0;
             left: 4.5rem;
             transform: translateY(50%);
-            width: 3rem;
-            height: 2rem;
+            width: 30px;
+            height: 20px;
             background-color: #008080;
             clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+            @include md {
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
     }
 
@@ -2199,6 +1982,9 @@
         font-size: 16px;
         font-weight: 700;
         line-height: 1.35;
+        @include md {
+            text-align: center;
+        }
 
     }
 
@@ -2206,6 +1992,9 @@
         margin-top: 1rem;
         width: 6.9rem;
         height: auto;
+        @include md {
+            width: 56px;
+        }
     }
 
     &__text {
@@ -2216,91 +2005,15 @@
         padding: 5rem 0;
         letter-spacing: 1%;
         border-top: 1px solid rgba(0, 130, 129, 0.3);
-    }
-
-    @include md {
-        padding: 2.4rem 1rem 0;
-
-        &__inner {
-            border-radius: 1.8rem;
-            padding: 2.4rem 1.2rem 2rem;
-        }
-
-        &__eyebrow {
-            font-size: 5.6rem;
-        }
-
-        &__title {
-            margin-top: -2.5rem;
-            font-size: 2rem;
-        }
-
-        &__lead {
-            margin-top: 0.9rem;
-            font-size: 13px;
-
-            span {
-                font-size: 2.2rem;
-            }
-        }
-
-        &__panel {
-            margin-top: 1.4rem;
-            border-radius: 1.4rem;
-            border-width: 0;
-            padding: 0.6rem 1.2rem 1.2rem;
-            background: rgba(255, 255, 255, 0.7);
-        }
-
-        &__side-word {
-            left: -2.5rem;
-            font-size: 7rem;
-            opacity: 0.7;
-        }
-
-        &__item {
-            grid-template-columns: 1fr;
-            justify-items: center;
-            gap: 1rem;
-            padding: 1.4rem 0 1.8rem;
-            border: 0;
-            position: relative;
-
-            &:not(:last-child)::after {
-                content: "";
-                position: absolute;
-                left: 50%;
-                bottom: 0.2rem;
-                transform: translateX(-50%);
-                width: 0;
-                height: 0;
-                border-left: 1rem solid transparent;
-                border-right: 1rem solid transparent;
-                border-top: 1.3rem solid #008080;
-            }
-        }
-
-        &__step-title {
-            font-size: 16px;
-        }
-
-        &__step-icon {
-            margin-top: 0.6rem;
-            width: 4.6rem;
-            height: 4.6rem;
-            font-size: 2.2rem;
-        }
-
-        &__text {
-            font-size: 1.2rem;
-            line-height: 1.7;
+        @include md {
+            padding: 6rem 0;
         }
     }
 }
 
 /* faq */
 .faq {
-    padding: 4.5rem 4.7rem 10rem;
+    padding: 4.5rem 0;
 
     &__header {
         text-align: center;
@@ -2318,6 +2031,9 @@
         -webkit-text-fill-color: transparent;
         color: transparent;
         opacity: 0.2;
+        @include md {
+            font-size: 100px;
+        }
     }
 
     &__title {
@@ -2325,6 +2041,10 @@
         font-size: 2.4rem;
         font-weight: 700;
         color: #008080;
+        @include md {
+            font-size: 18px;
+            margin-top: -30px;
+        }
     }
 
     &__category-nav {
@@ -2334,6 +2054,10 @@
         justify-content: center;
         gap: 1.6rem 3rem;
         margin-bottom: 8.2rem;
+        @include md {
+            justify-content: flex-start;
+            margin-bottom: 30px;
+        }
     }
 
     &__category-link {
@@ -2347,7 +2071,9 @@
         gap: 1.5rem;
         cursor: pointer;
         padding: 0;
-
+        @include md {
+            font-size: 14px;
+        }
         &.is-active {
             opacity: 1;
         }
@@ -2384,18 +2110,20 @@
 
     &__category-trigger {
         border: 0;
-        border-radius: 2.5rem;
+        border-radius: 25px;
         padding: 1rem 3rem;
         background: #008080;
         color: #fff;
         font-size: 2rem;
         font-weight: 700;
-
         display: inline-flex;
         align-items: center;
         gap: 1.5rem;
         cursor: pointer;
         margin-bottom: 2rem;
+        @include md {
+            font-size: 16px;
+        }
     }
 
     &__category-icon {
@@ -2431,7 +2159,9 @@
     &__item {
         padding: 2.4rem 4.1rem 2.4rem 4.8rem;
         border-bottom: 0.1rem solid rgba(0, 130, 129, 0.3);
-
+        @include md {
+            padding: 2.4rem 1rem;
+        }
         &.is-open {
             .faq__icon::before {
                 transform: translate(-50%, -50%) rotate(180deg);
@@ -2461,7 +2191,7 @@
 
     &__label {
         font-family: "Oswald", sans-serif;
-        font-size: 2rem;
+        font-size: 20px;
         font-weight: 700;
         color: #008080;
 
@@ -2517,42 +2247,6 @@
             font-weight: 400;
         }
     }
-
-    @include md {
-        padding: 6rem 2rem 8rem;
-
-        &__eyebrow {
-            font-size: 6rem;
-        }
-
-        &__title {
-            font-size: 2.6rem;
-        }
-
-        &__question {
-            grid-template-columns: auto 1fr auto;
-            gap: 0.8rem;
-        }
-
-        &__category-nav {
-            justify-content: flex-start;
-            gap: 1rem 1.4rem;
-            margin-bottom: 2.2rem;
-        }
-
-        &__category-link {
-            font-size: 1.4rem;
-        }
-
-        &__category-trigger {
-            font-size: 1.8rem;
-            padding: 1rem 1.6rem;
-        }
-
-        &__text {
-            font-size: 1.5rem;
-        }
-    }
 }
 
 /* contact-form */
@@ -2563,6 +2257,9 @@
         background: #008080;
         padding: 2.5rem 3.6rem;
         text-align: center;
+        @include md {
+            padding: 3.3rem 1rem;
+        }
     }
 
     &__promo-title {
@@ -2572,6 +2269,10 @@
         line-height: 1.4;
 
         margin-bottom: 1.2rem;
+        @include md {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
     }
 
     &__promo-row {
@@ -2579,15 +2280,20 @@
         align-items: center;
         justify-content: center;
         gap: 1.4rem;
+        @include sm {
+            flex-direction: column;
+        }
     }
 
     &__promo-text {
         color: #fff;
         font-size: 16px;
         font-weight: 500;
-        line-height: 5rem;
+        line-height: 2;
         text-align: left;
-
+        @include md {
+            text-align: center;
+        }
         .dot {
             color: #fff;
             position: relative;
@@ -2607,13 +2313,13 @@
         position: relative;
         width: min(65rem, 100%);
         min-height: 9.6rem;
-        border-radius: 4.5rem;
+        border-radius: 45px;
         background: #ffe44b;
         color: #008080;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 1.2rem;
+        padding: 1.6rem 6.6rem;
         font-size: 16px;
         font-weight: 500;
         box-shadow: inset 0 -0.6rem 0 #dcb108;
@@ -2621,11 +2327,14 @@
         text-align: center;
         text-shadow: 0.5px 0.5px 0 #fff;
         letter-spacing: 1%;
+        @include md {
+            padding-left: 3.6rem;
+        }
 
         &-label {
-            display: inline-flex;
-            align-items: baseline;
-            line-height: 1;
+            word-wrap: normal;
+            line-height: 1.6;
+            margin-bottom: 1rem;
         }
 
         &-label span {
@@ -2646,13 +2355,16 @@
     }
 
     &__promo-caption {
-        margin-top: 1.4rem;
+        margin-top: 14px;
         color: #fff;
-        font-size: 1.4rem;
-        font-weight: 500;
+        font-size: 14px;
+        font-weight: regular;
         line-height: 1.5;
         letter-spacing: 1%;
         text-align: center;
+        @include md {
+            font-size: 13px;
+        }
     }
 
     &__header {
@@ -2726,7 +2438,7 @@
     }
 
     &__panel {
-        border-radius: 5rem;
+        border-radius: 50px;
         padding: 9.1rem 5rem;
         width: 100%;
         background: linear-gradient(to right,
@@ -2786,7 +2498,7 @@
         margin-left: 0.8rem;
         min-width: 5rem;
         padding: 2px 11px;
-        border-radius: 2rem;
+        border-radius: 20px;
         background: #FFFFFF;
         color: #008080;
         font-size: 14px;
@@ -2806,7 +2518,7 @@
     &__field {
         width: 100%;
         border: 0;
-        border-radius: 4rem;
+        border-radius: 40px;
         min-height: 5rem;
         padding: 1.7rem 3.5rem;
         background: rgba(255, 255, 255, 0.8);
@@ -2861,7 +2573,7 @@
             }
 
             input[type="checkbox"] {
-                border-radius: 0.3rem;
+                border-radius: 3px;
             }
 
             input[type="checkbox"]::before {
@@ -2894,7 +2606,7 @@
         }
 
         &--textarea {
-            border-radius: 2.4rem;
+            border-radius: 24px;
             min-height: 13rem;
             resize: vertical;
         }
@@ -2916,7 +2628,7 @@
             -webkit-appearance: none;
             appearance: none;
             border: 0.2rem solid #008080;
-            border-radius: 0.3rem;
+            border-radius: 3px;
             background: #fff;
             display: inline-grid;
             place-content: center;
@@ -2951,7 +2663,7 @@
         width: min(52rem, 100%);
         min-height: 9.5rem;
         border: 0;
-        border-radius: 4.5rem;
+        border-radius: 45px;
         background: #FFE44B;
         color: #008080;
         font-size: 16px;

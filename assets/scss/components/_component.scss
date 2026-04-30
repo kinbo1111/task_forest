@@ -1,12 +1,15 @@
 
 /* trial-cta */
 .trial-cta {
-    &__inner {
-        position: relative;
-        background: #008080;
-        text-align: center;
-        padding: 3.5rem;
+    position: relative;
+    padding: 3.5rem 0;
+    background: #008080;
 
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         &::after {
             content: "";
             position: absolute;
@@ -25,26 +28,30 @@
         position: relative;
         z-index: 1;
         color: #fff;
-        font-size: 1.8rem;
+        font-size: 18px;
         font-weight: 700;
         line-height: 1.4;
         letter-spacing: 0;
+        text-align: center;
+        @include md {
+            font-size: 16px;
+        }
     }
 
     &__button {
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         z-index: 1;
         margin-top: 2rem;
         width: min(65rem, 100%);
         min-height: 9.6rem;
-        border-radius: 4.5rem;
+        border-radius: 45px;
         background: #ffe44b;
         color: #008080;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
         padding: 1.2rem 6.2rem 1.2rem 2rem;
-        font-size: 1.6rem;
+        font-size: 16px;
         font-weight: 500;
         line-height: 1;
         letter-spacing: 0;
@@ -52,12 +59,13 @@
         text-shadow: 0.5px 0.5px 0 #fff;
         box-shadow: inset 0 -0.6rem 0 #dcb108, 0 0.2rem 0.6rem rgba(0, 0, 0, 0.15);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+        @include md {
+            margin-top: 26px;
+        }
         &-label {
-            display: inline-flex;
-            align-items: baseline;
-            line-height: 1;
+            line-height: 1.6;
             margin-bottom: 1.2rem;
+            word-wrap: normal;
         }
 
         &-label span {
@@ -88,52 +96,13 @@
     &__caption {
         position: relative;
         z-index: 1;
-        margin-top: 1.1rem;
+        margin-top: 11px;
         color: #fff;
-        font-size: 1.3rem;
+        font-size: 13px;
         font-weight: 400;
         line-height: 1.45;
         letter-spacing: 1%;
-    }
-
-    @include md {
-        padding: 0 1rem;
-
-        &__inner {
-            padding: 2rem 1.4rem 1.6rem;
-
-            &::after {
-                right: 2%;
-                font-size: 9rem;
-                letter-spacing: -1rem;
-            }
-        }
-
-        &__lead {
-            font-size: 1.5rem;
-            line-height: 1.55;
-        }
-
-        &__button {
-            margin-top: 1.2rem;
-            width: 100%;
-            min-height: 6.8rem;
-            font-size: 1.35rem;
-            padding: 1rem 3.8rem 1rem 1.2rem;
-
-            &::after {
-                right: 2rem;
-                width: 1.1rem;
-                height: 1.2rem;
-                border-right-width: 0.3rem;
-                border-bottom-width: 0.3rem;
-            }
-        }
-
-        &__caption {
-            margin-top: 0.9rem;
-            font-size: 1rem;
-        }
+        text-align: center;
     }
 }
 

@@ -2,6 +2,7 @@
     max-width: 1440px;
     padding: 0 5rem;
     margin: 0 auto;
+
     @include sm {
         padding: 0 1.5rem;
     }
@@ -29,6 +30,7 @@
 
 .text-30 {
     font-size: 3rem;
+
     @include md {
         font-size: 24px;
     }
@@ -40,6 +42,7 @@
 
 .text-24 {
     font-size: 2.4rem;
+
     @include md {
         font-size: 20px;
     }
@@ -47,6 +50,7 @@
 
 .text-20 {
     font-size: 2rem;
+
     @include md {
         font-size: 20px;
     }
@@ -54,6 +58,7 @@
 
 .text-18 {
     font-size: 1.8rem;
+
     @include md {
         font-size: 18px;
     }
@@ -97,4 +102,26 @@
 
 .font-black {
     font-weight: 900;
+}
+
+.sp {
+    display: none;
+
+    @include md {
+        display: block;
+    }
+}
+
+.pc {
+    display: block;
+    @include md {
+        display: none;
+    }
+}
+
+.text-18-sp {
+    font-size: 1.8rem;
+    @include md {
+        font-size: 15px;
+    }
 }
