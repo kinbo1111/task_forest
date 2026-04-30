@@ -947,7 +947,12 @@
         font-size: 10rem;
         font-weight: 700;
         line-height: 1;
-        color: rgba(0, 61, 61, 0.16);
+        background: linear-gradient(90deg, #093028 0%, #237A57 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        opacity: 0.2;
         text-transform: lowercase;
     }
 
@@ -1880,9 +1885,28 @@
         position: relative;
         max-width: 34rem;
         width: 100%;
+        background-color: white;
+        height: 22rem;
+        border-radius: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::after {
+            content: "";
+            position: absolute;
+            right: -1.2rem;
+            bottom: -1.2rem;
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/bg_mask.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
         img {
             width: auto;
-            height: 20rem;
+            height: 18rem;
+            z-index: 2;
         }
     }
 
@@ -2067,7 +2091,12 @@
         font-size: 10rem;
         font-weight: 700;
         line-height: 1;
-        color: rgba(0, 128, 128, 0.18);
+        background: linear-gradient(90deg, #093028 0%, #237A57 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        opacity: 0.2;
     }
 
     &__title {
@@ -2281,8 +2310,12 @@
         font-size: 10rem;
         font-weight: 700;
         line-height: 1;
-
-        color: rgba(0, 61, 61, 0.18);
+        background: linear-gradient(90deg, #093028 0%, #237A57 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        opacity: 0.2;
     }
 
     &__title {
@@ -2631,7 +2664,12 @@
         font-size: 10rem;
         line-height: 1.2;
         font-weight: 700;
-        color: rgba(0, 61, 61, 0.18);
+        background: linear-gradient(90deg, #093028 0%, #237A57 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        opacity: 0.2;
     }
 
     &__title {
