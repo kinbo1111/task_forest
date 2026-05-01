@@ -168,6 +168,10 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 1.5rem;
+        @include md {
+            padding: 2rem;
+            gap: 4rem;
+        }
     }
 
     &__item {
@@ -459,6 +463,9 @@
         font-weight: 700;
         line-height: 1.8;
         letter-spacing: 1%;
+        @include md {
+            padding: 3rem 1.2rem;
+        }
     }
 
     &__footer-text {
@@ -2299,14 +2306,21 @@
         .dot {
             color: #fff;
             position: relative;
+            em {
+                position: relative;
+                font-style: normal;
 
-            &::before {
-                content: "";
-                position: absolute;
-                left: 1rem;
-                top: -1.2rem;
-                width: 100%;
-                border-bottom: 1.2rem dotted #ffe44b;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    transform: translate(-50%, -50%);
+                    width: 1rem;
+                    height: 1rem;
+                    background: #ffe44b;
+                    border-radius: 50%;
+                }
             }
         }
     }
@@ -2422,7 +2436,7 @@
         font-size: 3.4rem;
         font-weight: 700;
         line-height: 1.2;
-
+        letter-spacing: 2.5%;
 
         .number {
             font-size: 4.5rem;

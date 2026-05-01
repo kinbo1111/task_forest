@@ -92,7 +92,7 @@
     &__to-top {
         position: absolute;
         right: 3.2rem;
-        bottom: 30%;
+        bottom: 32%;
         width: 100px;
         height: 100px;
         border-radius: 50%;
@@ -187,6 +187,7 @@
     }
 
     &__meta {
+        width: 100%;
         text-align: right;
         display: grid;
         gap: 1.2rem;

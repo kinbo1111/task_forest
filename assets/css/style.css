@@ -471,6 +471,12 @@ fieldset {
   flex-wrap: wrap;
   gap: 1.5rem;
 }
+@media (max-width: 768px) {
+  .feature-strip__inner {
+    padding: 2rem;
+    gap: 4rem;
+  }
+}
 .feature-strip__item {
   width: 400px;
   height: 125px;
@@ -744,6 +750,11 @@ fieldset {
   font-weight: 700;
   line-height: 1.8;
   letter-spacing: 1%;
+}
+@media (max-width: 768px) {
+  .risk-panel__result {
+    padding: 3rem 1.2rem;
+  }
 }
 .risk-panel__footer-text {
   text-align: center;
@@ -2445,13 +2456,20 @@ fieldset {
   color: #fff;
   position: relative;
 }
-.contact-form__promo-text .dot::before {
+.contact-form__promo-text .dot em {
+  position: relative;
+  font-style: normal;
+}
+.contact-form__promo-text .dot em::before {
   content: "";
   position: absolute;
-  left: 1rem;
-  top: -1.2rem;
-  width: 100%;
-  border-bottom: 1.2rem dotted #ffe44b;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 1rem;
+  height: 1rem;
+  background: #ffe44b;
+  border-radius: 50%;
 }
 .contact-form__promo-cta {
   position: relative;
@@ -2558,6 +2576,7 @@ fieldset {
   font-size: 3.4rem;
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: 2.5%;
 }
 .contact-form__lead .number {
   font-size: 4.5rem;
@@ -3243,7 +3262,7 @@ body {
 .footer__to-top {
   position: absolute;
   right: 3.2rem;
-  bottom: 30%;
+  bottom: 32%;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -3336,6 +3355,7 @@ body {
   font-weight: bold;
 }
 .footer__meta {
+  width: 100%;
   text-align: right;
   display: grid;
   gap: 1.2rem;
