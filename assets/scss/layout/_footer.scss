@@ -92,7 +92,7 @@
     &__to-top {
         position: absolute;
         right: 3.2rem;
-        bottom: 18%;
+        bottom: 30%;
         width: 100px;
         height: 100px;
         border-radius: 50%;
@@ -134,7 +134,7 @@
         color: #fff;
         padding: 3.8rem 0;
         @include md {
-            padding: 4.6rem 1.5rem;
+            padding: 46px 1.5rem 4.6rem;
         }
     }
 
@@ -152,7 +152,13 @@
         width: 100%;
         display: grid;
         gap: 0.8rem;
-
+        &-title {
+            width: 100%;
+            text-align: left;
+            font-size: 18px;
+            color: white;
+            margin-bottom: 10px;
+        }
         div {
             display: flex;
             gap: 2rem;

@@ -29,6 +29,7 @@
                     <span></span>
                 </button>
                 <nav class="header__dropdown" id="header-dropdown-menu" aria-label="サイトメニュー">
+                    <button class="header__dropdown-close" type="button" aria-label="メニューを閉じる"></button>
                     <ul class="header__dropdown-list">
                         <li><a href="#risk-panel"><span class="header__dropdown-arrow"></span>よくある課題</a></li>
                         <li><a href="#asset-mechanism"><span class="header__dropdown-arrow"></span>解決策</a></li>
@@ -166,7 +167,7 @@
             <p class="risk-panel__closing container wow fadeInUp animated">
                 <span class="flex item-center justify-center risk-panel__closing-logo"><img
                         src="./assets/images/logo.png" alt="task forest">
-                    は客観的な<br class="sp-only"></span>視点から<span class="text-30">社内ノウハウを構造化</span>し、<span>解決策を提示</span>します。
+                    は客観的な視点から<br class="sp-only"></span><span class="text-30">社内ノウハウを構造化</span>し、<br class="sp-only"></span><span>解決策を提示</span>します。
             </p>
         </section>
         <section class="trial-cta">
@@ -382,7 +383,7 @@
                     <div class="use-case__steps">
                         <article class="use-case__step-card wow fadeInLeft animated" data-wow-delay="0.1s"
                             style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
-                            <img class="use-case__step-icon" src="./assets/images/usecase_icon1.png" alt="">
+                            <img class="use-case__step-icon" src="./assets/images/usecase_icon1.svg" alt="">
                             <h4>自動展開</h4>
                             <p>「特許取得に必要なタスク」を<span>AIに指示するだけ</span>で、専門的な工程を<span>瞬時にリスト化</span>。数時間の調査・整理作業を「数秒」へと短縮。
                             </p>
@@ -392,7 +393,7 @@
                             aria-hidden="true"></span>
                         <article class="use-case__step-card wow fadeInLeft animated" data-wow-delay="0.3s"
                             style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
-                            <img class="use-case__step-icon" src="./assets/images/usecase_icon2.png" alt="">
+                            <img class="use-case__step-icon" src="./assets/images/usecase_icon2.svg" alt="">
                             <h4>可視化</h4>
                             <p>業務の全体像が「一目瞭然」になり、進捗確認のための不要な連絡が激減。</p>
                         </article>
@@ -401,7 +402,7 @@
                             aria-hidden="true"></span>
                         <article class="use-case__step-card wow fadeInLeft animated" data-wow-delay="0.5s"
                             style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
-                            <img class="use-case__step-icon" src="./assets/images/usecase_icon3.png" alt="">
+                            <img class="use-case__step-icon" src="./assets/images/usecase_icon3.svg" alt="">
                             <h4>資産化</h4>
                             <p>チーム全体の知恵が構造化され、誰でも迷わず高度な実務を遂行できる環境を構築。</p>
                         </article>
@@ -583,7 +584,7 @@
                         </div>
                         <div class="asset-steps__content">
                             <p>
-                                まずは、各担当者の頭の中にしかない「ブラックボックス化」した実務を棚卸しします。特別な準備は不要です。今やっている業務を文章で書くだけで、「何が、どこまで、どう進んでいるのか」を構造化。<br>
+                                まずは、各担当者の頭の中にしかない「ブラックボックス化」した実務を棚卸しします。特別な準備は不要です。今やっている業務を文章で書くだけで、「何が、どこまで、どう進んでいるのか」を構造化。<br class="pc-only">
                                 「担当者しか知らない」状況をこの瞬間に終わらせます。
                             </p>
                             <div class="asset-steps__result">
@@ -669,7 +670,7 @@
                             <img class="flow__step-icon" src="./assets/images/flow2.png" alt="">
                         </div>
                         <p class="flow__text">
-                            Task Forestのマニュアル（10.5項）に基づき、貴社専用の「組織AI」をセットアップします。<br>
+                            Task Forestのマニュアル（10.5項）に基づき、貴社専用の「組織AI」をセットアップします。<br class="pc-only">
                             既存のTODOや業務フローを読み込ませるだけで、AIが貴社のルールを学習。熟練者の「判断基準」をデジタル上に再現し、「見たらすぐ分かる」手順（タスクテンプレート）を具現化します。
                         </p>
                     </div>
@@ -1138,7 +1139,6 @@
             </nav>
 
             <div class="footer__visual">
-
                 <img src="./assets/images/computer.png" alt="task forestの管理画面イメージ">
             </div>
         </div>
@@ -1146,10 +1146,7 @@
         <div class="footer__bottom">
             <div class="footer__bottom-inner container">
                 <dl class="footer__company">
-                    <div>
-                        <dt>会社名</dt>
-                        <dd>株式会社フォレスト</dd>
-                    </div>
+                    <h2 class="footer__company-title">株式会社フォレスト</h2>
                     <div>
                         <dt>住所</dt>
                         <dd>〒160-0023　東京都新宿区西新宿8-11-10 星野ビル3階</dd>

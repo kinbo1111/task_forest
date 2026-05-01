@@ -40,6 +40,7 @@ wow.init();
         const header = document.querySelector(".header");
         const menuButton = document.querySelector(".header__menu");
         const dropdown = document.querySelector(".header__dropdown");
+        const dropdownCloseButton = document.querySelector(".header__dropdown-close");
 
         if (!header || !menuButton || !dropdown) return;
 
@@ -70,6 +71,10 @@ wow.init();
             }
             openMenu();
         });
+
+        if (dropdownCloseButton) {
+            dropdownCloseButton.addEventListener("click", closeMenu);
+        }
 
         document.addEventListener("click", (event) => {
             if (!menuButton.classList.contains("is-open")) return;

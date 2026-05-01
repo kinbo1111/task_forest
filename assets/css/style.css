@@ -6,6 +6,7 @@
 
 html {
   max-width: 1440px;
+  overflow-x: hidden;
   width: 100%;
   margin: 0 auto;
   font-size: 0.69444vw;
@@ -510,14 +511,12 @@ fieldset {
 .risk-panel {
   position: relative;
   padding: 5rem 1rem;
-  overflow: hidden;
 }
 .risk-panel__inner {
-  background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
+  position: relative;
   border-radius: 50px;
   padding: 5rem 5rem 8rem;
-  position: relative;
-  overflow: visible;
+  background: linear-gradient(to right, rgba(108, 206, 206, 0.8), rgba(0, 217, 245, 0.7));
 }
 @media (max-width: 768px) {
   .risk-panel__inner {
@@ -528,11 +527,13 @@ fieldset {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -5.9rem;
+  bottom: -6.1rem;
   width: 37%;
-  height: 6rem;
+  height: 6.11rem;
   transform: translateX(-50%);
-  background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
+  background: linear-gradient(to right, rgba(108, 206, 206, 0.8), rgba(0, 217, 245, 0.7));
+  background-size: 270.2702702703% 100%;
+  background-position: center;
   clip-path: polygon(0 0, 100% 0, 50% 100%);
 }
 .risk-panel__title {
@@ -797,6 +798,10 @@ fieldset {
   font-weight: 700;
   line-height: 1.6;
   letter-spacing: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 768px) {
   .asset-mechanism__title {
@@ -834,6 +839,10 @@ fieldset {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 768px) {
   .asset-mechanism__title-sub {
@@ -990,7 +999,7 @@ fieldset {
 
 /* feature-details */
 .feature-details {
-  padding: 5rem 0;
+  padding: 5rem 0 10rem;
 }
 .feature-details__title {
   text-align: center;
@@ -1751,6 +1760,7 @@ fieldset {
   line-height: 1.6;
   font-weight: 400;
   letter-spacing: 1%;
+  word-break: auto-phrase;
 }
 .asset-steps__intro p span {
   font-weight: 700;
@@ -2855,7 +2865,7 @@ fieldset {
   background-color: white;
   height: 8rem;
   border-radius: 0 0 50px 0;
-  padding: 1rem 0;
+  padding: 1.3rem 1.5rem 1.8rem;
 }
 .header__logo img {
   width: 20.2rem;
@@ -2938,7 +2948,7 @@ fieldset {
 }
 .header__dropdown {
   position: absolute;
-  top: calc(100% + 1.4rem);
+  top: 0;
   right: 0;
   width: min(74rem, 100vw - 8rem);
   background: #fff;
@@ -2977,6 +2987,39 @@ fieldset {
   visibility: visible;
   transform: translateY(0);
   pointer-events: auto;
+}
+.header__dropdown-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  z-index: 2;
+}
+.header__dropdown-close::before, .header__dropdown-close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.2rem;
+  height: 0.2rem;
+  background: #008080;
+  border-radius: 2px;
+  transform-origin: center;
+}
+.header__dropdown-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.header__dropdown-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+@media (max-width: 768px) {
+  .header__dropdown-close {
+    top: 2.4rem;
+    right: 2.4rem;
+    width: 3rem;
+    height: 3rem;
+  }
 }
 .header__dropdown-list {
   display: grid;
@@ -3182,7 +3225,7 @@ body {
 .footer__to-top {
   position: absolute;
   right: 3.2rem;
-  bottom: 18%;
+  bottom: 30%;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -3223,7 +3266,7 @@ body {
 }
 @media (max-width: 768px) {
   .footer__bottom {
-    padding: 4.6rem 1.5rem;
+    padding: 46px 1.5rem 4.6rem;
   }
 }
 .footer__bottom-inner {
@@ -3241,6 +3284,13 @@ body {
   width: 100%;
   display: grid;
   gap: 0.8rem;
+}
+.footer__company-title {
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
 }
 .footer__company div {
   display: flex;

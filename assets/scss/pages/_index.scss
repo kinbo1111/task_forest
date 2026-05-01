@@ -13,6 +13,7 @@
         justify-content: space-between;
         min-height: calc(100vh - 10rem);
         border-radius: 50px 0 0 0;
+
         @include md {
             padding: 7.5rem 2rem 3rem 2rem;
             flex-direction: column;
@@ -46,6 +47,7 @@
         font-weight: 700;
         line-height: 1.5;
         letter-spacing: 1%;
+
         p {
             @include md {
                 font-size: 18px !important;
@@ -65,10 +67,12 @@
         padding: 2rem 3rem;
         margin-top: 1.2rem;
         margin-bottom: 2rem;
+
         @include md {
             margin-top: 36px;
             height: 75px;
         }
+
         img {
             width: 100%;
             height: auto;
@@ -98,6 +102,7 @@
     &__laptop {
         max-width: 59rem;
         margin-bottom: 3rem;
+
         img {
             width: 100%;
             height: auto;
@@ -124,15 +129,19 @@
         text-shadow: 1px 1px 0 #fff;
         margin: 2.5rem auto 0 auto;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+
         p {
             margin-bottom: 0.8rem;
         }
+
         &-bold {
             font-weight: 700;
         }
+
         &:hover {
             transform: translateY(4px);
             box-shadow: unset;
+
             .kv__arrow {
                 transform: translateX(5px) rotate(-45deg);
             }
@@ -184,6 +193,7 @@
         h2 {
             font-size: 3.5rem;
             font-weight: 700;
+
             @include md {
                 font-size: 30px;
             }
@@ -193,6 +203,7 @@
         p {
             font-size: 2rem;
             font-weight: 700;
+
             @include md {
                 font-size: 16px;
             }
@@ -204,35 +215,43 @@
 .risk-panel {
     position: relative;
     padding: 5rem 1rem;
-    overflow: hidden;
+
     &__inner {
-        background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
+        position: relative;
         border-radius: 50px;
         padding: 5rem 5rem 8rem;
-        position: relative;
-        overflow: visible;
-        @include md {
-            padding: 5rem 2rem 8rem;
-        }
+        background: linear-gradient(to right,
+                rgba(108, 206, 206, 0.8),
+                rgba(0, 217, 245, 0.7));
+                @include md {
+                    padding: 5rem 2rem 8rem;
+                }     
         &::after {
             content: "";
             position: absolute;
             left: 50%;
-            bottom: -5.9rem;
+            bottom: -6.1rem;
             width: 37%;
-            height: 6rem;
+            height: 6.11rem;
             transform: translateX(-50%);
-            background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
+            background: linear-gradient(
+              to right,
+              rgba(108, 206, 206, 0.8),
+              rgba(0, 217, 245, 0.7)
+            );
+            background-size: calc(100% / 0.37) 100%;
+            background-position: center;
+          
             clip-path: polygon(0 0, 100% 0, 50% 100%);
-        }
+          }
     }
-
     &__title {
         text-align: center;
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 1.35;
         color: #002020;
+
         @include md {
             font-size: 18px;
         }
@@ -244,6 +263,7 @@
         gap: 0.2rem;
         font-size: 4rem;
         line-height: 1;
+
         @include md {
             font-size: 30px;
         }
@@ -276,6 +296,7 @@
         position: relative;
         display: grid;
         padding: 2rem 0 4.8rem;
+
         @include md {
             padding: 4rem 0 2.8rem;
             gap: 4rem;
@@ -288,19 +309,24 @@
         align-items: center;
         justify-content: flex-start;
         gap: 4rem;
+
         @include md {
             gap: 2rem;
         }
+
         &.reverse {
             justify-content: flex-end;
             margin-top: -5rem;
             gap: 0;
+
             @include lg {
                 margin-top: -2rem;
             }
+
             @include md {
                 margin-top: 0;
             }
+
             .risk-panel__bubble {
                 &::before {
                     border-left: none;
@@ -316,36 +342,46 @@
                     height: 9.7rem;
                 }
             }
+
             .risk-panel__issue-visual {
                 margin-left: 6rem;
+
                 @include lg {
                     margin-left: 2rem;
                 }
+
                 @include md {
                     margin-left: 0;
                 }
             }
         }
+
         &:nth-of-type(3) {
             margin-top: -5rem;
+
             @include lg {
                 margin-top: -2rem;
             }
+
             @include md {
                 margin-top: 0;
             }
-            .risk-panel__issue-visual {
-            }
+
+            .risk-panel__issue-visual {}
         }
+
         &-visual {
             width: 22%;
             height: auto;
+
             img {
                 width: 100%;
             }
+
             @include lg {
                 width: 25%;
             }
+
             @include md {
                 width: 30%;
             }
@@ -364,10 +400,12 @@
         font-weight: 700;
         line-height: 1.5;
         word-wrap: normal;
+
         @include md {
             font-size: 16px;
             padding: 18px 2.2rem;
         }
+
         &::after {
             content: "";
             position: absolute;
@@ -379,6 +417,7 @@
             border: 1px solid #008080;
             border-radius: 70px;
             clip-path: inset(5px 0 0 0 round 18% 31% 33% 33% / 18% 10% 10% 13%);
+
             @include md {
                 height: 4.4rem;
                 border-radius: 999px;
@@ -394,6 +433,7 @@
             height: 2rem;
             border-left: 1.5px solid #008080;
             transform: rotate(30deg);
+
             @include md {
                 bottom: -1.6rem;
                 height: 1.4rem;
@@ -428,9 +468,11 @@
         font-weight: 700;
         line-height: 1.8;
         letter-spacing: 1%;
+
         @include md {
             font-size: 16px;
         }
+
         span {
             position: relative;
             z-index: 0;
@@ -444,9 +486,11 @@
         font-weight: 700;
         line-height: 1.35;
         text-align: center;
+
         @include md {
             font-size: 20px;
         }
+
         img {
             width: 24.4rem;
             height: auto;
@@ -456,6 +500,7 @@
         span {
             color: #008080;
         }
+
         &-logo {
             color: #002020 !important;
         }
@@ -473,6 +518,10 @@
         font-weight: 700;
         line-height: 1.6;
         letter-spacing: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         @include md {
             font-size: 18px;
         }
@@ -483,9 +532,11 @@
         gap: 0.04em;
         font-size: 3rem;
         color: #008080;
-        @include md{
+
+        @include md {
             font-size: 24px;
         }
+
         >span {
             position: relative;
             display: inline-block;
@@ -509,9 +560,14 @@
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 1.6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         @include md {
             font-size: 18px;
         }
+
         em {
             font-style: normal;
             color: #008080;
@@ -521,6 +577,7 @@
             width: auto;
             height: 3.6rem;
             flex-shrink: 0;
+
             @include md {
                 height: 30px;
             }
@@ -531,6 +588,7 @@
         margin-top: 11.4rem;
         display: grid;
         gap: 1.2rem;
+
         @include md {
             margin-top: 30px;
         }
@@ -617,6 +675,7 @@
         color: transparent;
         white-space: nowrap;
         word-break: normal;
+
         @include md {
             left: -1rem;
         }
@@ -657,6 +716,7 @@
         line-height: 1.5;
         letter-spacing: 1%;
         padding-right: 6rem;
+
         @include md {
             padding-right: 0;
         }
@@ -665,7 +725,7 @@
 
 /* feature-details */
 .feature-details {
-    padding: 5rem 0;
+    padding: 5rem 0 10rem;
 
     &__title {
         text-align: center;
@@ -677,9 +737,11 @@
         @include md {
             font-size: 18px;
         }
+
         .focus {
             color: #008080;
             font-size: 3rem;
+
             @include md {
                 font-size: 24px;
             }
@@ -690,6 +752,7 @@
             font-size: 3.2rem;
             font-style: italic;
             font-weight: 900;
+
             @include md {
                 font-size: 32px;
             }
@@ -700,6 +763,7 @@
         margin-top: 3.2rem;
         display: grid;
         gap: 6.4rem;
+
         @include md {
             gap: 2rem;
         }
@@ -708,6 +772,7 @@
     &__item {
         position: relative;
         padding-right: 28%;
+
         @include md {
             display: flex;
             align-items: center;
@@ -716,6 +781,7 @@
             padding-left: 0;
             padding-right: 0;
         }
+
         &-head {
             display: grid;
             grid-template-columns: 62px 1fr;
@@ -729,6 +795,7 @@
         border-radius: 50px 0 0;
         background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
         padding: 3.7rem 8rem 3.7rem 3.3rem;
+
         @include md {
             padding: 35px 20px 20px;
         }
@@ -741,6 +808,7 @@
         font-weight: 700;
         color: white;
         text-align: center;
+
         @include md {
             font-size: 50px;
         }
@@ -759,6 +827,7 @@
         font-weight: 700;
         line-height: 1.35;
         margin-bottom: 1rem;
+
         @include md {
             font-size: 20px;
             margin-bottom: 0.2rem;
@@ -766,6 +835,7 @@
 
         span {
             font-size: 3rem;
+
             @include md {
                 font-size: 24px;
             }
@@ -780,6 +850,7 @@
         line-height: 1.7;
         letter-spacing: 1%;
         padding-left: 8rem;
+
         @include md {
             padding-left: 0;
         }
@@ -791,13 +862,16 @@
         top: 2.4rem;
         width: 33%;
         border-radius: 0 0 50px 0;
+
         @include md {
             position: unset;
             width: 100%;
         }
+
         img {
             width: 100%;
             height: auto;
+
             @include md {
                 width: 110%;
             }
@@ -822,6 +896,7 @@
         color: transparent;
         opacity: 0.2;
         text-transform: lowercase;
+
         @include md {
             font-size: 100px;
         }
@@ -833,6 +908,7 @@
         color: #008080;
         font-size: 2.4rem;
         font-weight: 700;
+
         @include md {
             font-size: 18px;
             margin-top: -30px;
@@ -845,9 +921,11 @@
         grid-template-columns: 41% 1fr;
         gap: 3.5rem;
         align-items: flex-end;
+
         @include md {
             grid-template-columns: 1fr;
         }
+
         &-content {
             max-width: 62rem;
         }
@@ -863,6 +941,7 @@
             border-radius: 30px;
             box-shadow: 1px 3px 7px 0 rgba(0, 0, 0, 0.2);
             margin: 0 auto;
+
             img {
                 width: 100%;
             }
@@ -873,6 +952,7 @@
         color: #002020;
         font-size: 16px;
         font-weight: 700;
+
         @include md {
             font-size: 15px;
         }
@@ -921,6 +1001,7 @@
         border-radius: 40px;
         background: linear-gradient(90deg, rgba(108, 206, 206, 0.8) 0%, rgba(0, 217, 245, 0.7) 100%);
         padding: 4rem 10rem;
+
         @include md {
             padding: 4rem 3rem;
         }
@@ -938,12 +1019,15 @@
         letter-spacing: 4%;
         width: fit-content;
         margin: 0 auto;
+
         @include md {
             font-size: 18px;
         }
+
         img {
             width: auto;
             height: 3.8rem;
+
             @include md {
                 height: 30px;
             }
@@ -979,10 +1063,12 @@
         grid-template-columns: 1fr auto 1fr auto 1fr;
         align-items: center;
         gap: 2.2rem;
+
         @include md {
             grid-template-columns: 1fr auto;
             justify-content: center;
         }
+
         @include sm {
             grid-template-columns: 1fr;
         }
@@ -994,9 +1080,11 @@
         border: 0.2rem solid #ffe44b;
         background: #fff;
         padding: 36px 22px 22px;
+
         @include md {
             padding: 30px 20px 20px;
         }
+
         position: relative;
         display: flex;
         align-items: center;
@@ -1031,6 +1119,7 @@
     &__step-icon {
         width: auto;
         height: 66px;
+
         @include md {
             height: 80px;
         }
@@ -1042,6 +1131,7 @@
         border-top: 4.5rem solid transparent;
         border-bottom: 4.5rem solid transparent;
         border-left: 3rem solid #fff;
+
         @include md {
             border-top: 3rem solid #fff;
             border-right: 4.5rem solid transparent;
@@ -1105,6 +1195,7 @@
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 1.2rem;
+
         @include md {
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
@@ -1124,6 +1215,7 @@
             font-weight: 700;
             line-height: 1.4;
             margin: 1rem 0;
+
             @include md {
                 font-size: 16px;
             }
@@ -1198,6 +1290,7 @@
         line-height: 1.45;
         letter-spacing: 2%;
         text-align: center;
+
         @include md {
             font-size: 18px;
         }
@@ -1243,6 +1336,7 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1rem;
+
         @include md {
             grid-template-columns: auto;
         }
@@ -1254,9 +1348,11 @@
         background: #fff;
         padding: 2.4rem 1.8rem 2rem;
         text-align: left;
+
         @include md {
             padding: 3rem 2rem 2rem;
         }
+
         h3 {
             margin-top: 2rem;
             color: #008080;
@@ -1305,9 +1401,8 @@
         object-fit: contain;
         display: block;
         margin: 0 auto;
-        @include md {
-           
-        }
+
+        @include md {}
     }
 
     &__compare {
@@ -1344,6 +1439,7 @@
 
             span {
                 font-size: 4rem;
+
                 @include md {
                     font-size: 40px;
                 }
@@ -1372,6 +1468,7 @@
         text-align: right;
         color: #003d3d;
         font-size: 14px;
+
         @include md {
             text-align: left;
         }
@@ -1394,6 +1491,7 @@
         background-size: contain;
         background-position: center;
         background-repeat: repeat;
+
         @include md {
             background-size: cover;
             background-repeat: no-repeat;
@@ -1408,6 +1506,7 @@
         gap: 3rem;
         align-items: flex-start;
         margin-bottom: 6rem;
+
         @include md {
             grid-template-columns: 1fr;
             gap: 1.2rem;
@@ -1416,6 +1515,7 @@
 
     &__intro {
         max-width: 42rem;
+
         @include md {
             max-width: 100%;
         }
@@ -1440,6 +1540,7 @@
             line-height: 1.6;
             font-weight: 400;
             letter-spacing: 1%;
+            word-break: auto-phrase;
 
             span {
                 font-weight: 700;
@@ -1453,6 +1554,7 @@
         background: #fff;
         box-shadow: 5px 6px 12px 0 rgba(0, 0, 0, 0.25);
         padding: 4.9rem 4.7rem;
+
         @include md {
             padding: 3.5rem 2.5rem;
         }
@@ -1464,9 +1566,11 @@
             font-size: 18px;
             font-weight: 700;
             line-height: 1.5;
+
             @include md {
                 font-size: 16px;
             }
+
             &+p {
                 margin-top: 1.8rem;
             }
@@ -1516,15 +1620,19 @@
             font-weight: 700;
             letter-spacing: 0;
             text-shadow: 0.5px 0.5px 0 white;
+
             @include md {
                 font-size: 18px;
             }
+
             span {
                 font-size: 3rem;
+
                 @include md {
                     font-size: 24px;
                 }
             }
+
             &.sp-only {
                 padding: 2rem;
             }
@@ -1590,10 +1698,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
         @include sm {
             max-width: 100%;
             height: 220px;
         }
+
         &::after {
             content: "";
             position: absolute;
@@ -1606,10 +1716,12 @@
             background-position: center;
             background-repeat: no-repeat;
         }
+
         img {
             width: auto;
             height: 18rem;
             z-index: 2;
+
             @include sm {
                 width: 100%;
                 height: auto;
@@ -1620,9 +1732,11 @@
     &__content {
         max-width: 47rem;
         width: 100%;
+
         @include sm {
             max-width: 100%;
         }
+
         p {
             color: #003d3d;
             font-size: 16px;
@@ -1689,6 +1803,7 @@
         -webkit-text-fill-color: transparent;
         color: transparent;
         opacity: 0.2;
+
         @include md {
             font-size: 100px;
         }
@@ -1700,6 +1815,7 @@
         color: #008080;
         font-size: 2.4rem;
         font-weight: 700;
+
         @include md {
             font-size: 18px;
             margin-top: -28px;
@@ -1725,9 +1841,10 @@
         position: relative;
         margin-top: 3rem;
         position: relative;
-            border-radius: 50px;
+        border-radius: 50px;
         padding: 10.4rem 10rem;
         background: rgba(255, 255, 255, 0.7);
+
         @include md {
             padding: 3rem 2.4rem;
         }
@@ -1754,13 +1871,16 @@
         gap: 5rem;
         align-items: center;
         z-index: 2;
+
         @include md {
             grid-template-columns: 1fr;
             gap: 1.6rem;
         }
+
         &:nth-of-type(1) {
             .flow__step-icon {
                 width: 8.5rem;
+
                 @include md {
                     width: 60px;
                 }
@@ -1770,6 +1890,7 @@
         &:nth-of-type(4) {
             .flow__step-icon {
                 width: 6rem;
+
                 @include md {
                     width: 45px;
                 }
@@ -1781,6 +1902,7 @@
 
             .flow__text {
                 border-bottom: 1px solid rgba(0, 130, 129, 0.3);
+
                 @include md {
                     border-bottom: none;
                 }
@@ -1797,6 +1919,7 @@
             height: 20px;
             background-color: #008080;
             clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+
             @include md {
                 left: 50%;
                 transform: translate(-50%, -50%);
@@ -1809,6 +1932,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
         @include md {
             margin-top: 2rem;
         }
@@ -1819,6 +1943,7 @@
         font-size: 16px;
         font-weight: 700;
         line-height: 1.35;
+
         @include md {
             text-align: center;
         }
@@ -1829,6 +1954,7 @@
         margin-top: 1rem;
         width: 6.9rem;
         height: auto;
+
         @include md {
             width: 56px;
         }
@@ -1842,6 +1968,7 @@
         padding: 5rem 0;
         letter-spacing: 1%;
         border-top: 1px solid rgba(0, 130, 129, 0.3);
+
         @include md {
             padding: 0 0 6rem 0;
             border-top: none;
@@ -1869,6 +1996,7 @@
         -webkit-text-fill-color: transparent;
         color: transparent;
         opacity: 0.2;
+
         @include md {
             font-size: 100px;
         }
@@ -1879,6 +2007,7 @@
         font-size: 2.4rem;
         font-weight: 700;
         color: #008080;
+
         @include md {
             font-size: 18px;
             margin-top: -30px;
@@ -1892,6 +2021,7 @@
         justify-content: center;
         gap: 1.6rem 3rem;
         margin-bottom: 8.2rem;
+
         @include md {
             justify-content: flex-start;
             margin-bottom: 30px;
@@ -1909,9 +2039,11 @@
         gap: 1.5rem;
         cursor: pointer;
         padding: 0;
+
         @include md {
             font-size: 14px;
         }
+
         &.is-active {
             opacity: 1;
         }
@@ -1959,6 +2091,7 @@
         gap: 1.5rem;
         cursor: pointer;
         margin-bottom: 2rem;
+
         @include md {
             font-size: 16px;
         }
@@ -1997,9 +2130,11 @@
     &__item {
         padding: 2.4rem 4.1rem 2.4rem 4.8rem;
         border-bottom: 0.1rem solid rgba(0, 130, 129, 0.3);
+
         @include md {
             padding: 2.4rem 1rem;
         }
+
         &.is-open {
             .faq__icon::before {
                 transform: translate(-50%, -50%) rotate(180deg);
@@ -2095,6 +2230,7 @@
         background: #008080;
         padding: 2.5rem 3.6rem;
         text-align: center;
+
         @include md {
             padding: 3.3rem 1rem;
         }
@@ -2107,6 +2243,7 @@
         line-height: 1.4;
 
         margin-bottom: 1.2rem;
+
         @include md {
             font-size: 20px;
             margin-bottom: 10px;
@@ -2118,6 +2255,7 @@
         align-items: center;
         justify-content: center;
         gap: 1.4rem;
+
         @include sm {
             flex-direction: column;
         }
@@ -2129,9 +2267,11 @@
         font-weight: 500;
         line-height: 2;
         text-align: left;
+
         @include md {
             text-align: center;
         }
+
         .dot {
             color: #fff;
             position: relative;
@@ -2166,6 +2306,7 @@
         text-shadow: 0.5px 0.5px 0 #fff;
         letter-spacing: 1%;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+
         @include md {
             padding-left: 3.6rem;
         }
@@ -2211,6 +2352,7 @@
         line-height: 1.5;
         letter-spacing: 1%;
         text-align: center;
+
         @include md {
             font-size: 13px;
         }
@@ -2232,6 +2374,7 @@
         -webkit-text-fill-color: transparent;
         color: transparent;
         opacity: 0.2;
+
         @include md {
             font-size: 100px;
         }
@@ -2242,6 +2385,7 @@
         color: #008080;
         font-size: 2.4rem;
         font-weight: 700;
+
         @include md {
             font-size: 18px;
             margin-top: -40px;
@@ -2293,6 +2437,7 @@
         background: linear-gradient(to right,
                 rgba(108, 206, 206, 0.8) 0%,
                 rgba(0, 217, 245, 0.7) 100%);
+
         @include md {
             padding: 6rem 1.5rem 7rem;
         }
@@ -2306,6 +2451,7 @@
         max-width: 120rem;
         width: 100%;
         margin: 0 auto 25px auto;
+
         @include md {
             grid-template-columns: 1fr;
             gap: 1rem;
@@ -2332,6 +2478,7 @@
             font-size: 13px;
             font-weight: 500;
         }
+
         @include md {
             display: flex;
             align-items: center;
@@ -2387,11 +2534,13 @@
             flex-wrap: wrap;
             align-items: center;
             gap: 0.8rem 2rem;
+
             @include sm {
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: flex-start;
             }
+
             label {
                 display: inline-flex;
                 align-items: center;
@@ -2414,6 +2563,7 @@
                 margin: 0;
                 accent-color: #008080;
                 border-radius: 5px;
+
                 &::before {
                     content: "";
                     transform: scale(0);
@@ -2551,6 +2701,7 @@
         &:hover::after {
             right: 6.9rem;
         }
+
         @include md {
             height: 8.5rem;
         }
