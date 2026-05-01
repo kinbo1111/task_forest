@@ -101,15 +101,28 @@ wow.init();
         const navButtons = document.querySelectorAll(".faq__category-link");
         const questions = document.querySelectorAll(".faq__question");
         if (!categories.length) return;
+        const openTransitionHandlers = new WeakMap();
+
+        const clearOpenTransitionHandler = (element) => {
+            const handler = openTransitionHandlers.get(element);
+            if (!handler) return;
+            element.removeEventListener("transitionend", handler);
+            openTransitionHandlers.delete(element);
+        };
 
         const setAccordionState = (element, isOpen) => {
+            clearOpenTransitionHandler(element);
+
             if (isOpen) {
                 element.style.maxHeight = `${element.scrollHeight}px`;
                 const onOpenEnd = (event) => {
                     if (event.target !== element || event.propertyName !== "max-height") return;
-                    element.style.maxHeight = "none";
-                    element.removeEventListener("transitionend", onOpenEnd);
+                    if (element.style.maxHeight !== "0px") {
+                        element.style.maxHeight = "none";
+                    }
+                    clearOpenTransitionHandler(element);
                 };
+                openTransitionHandlers.set(element, onOpenEnd);
                 element.addEventListener("transitionend", onOpenEnd);
                 return;
             }
