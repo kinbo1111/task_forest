@@ -932,6 +932,7 @@
 
         @include md {
             grid-template-columns: 1fr;
+            gap: 1.6rem;
         }
 
         &-content {
@@ -953,6 +954,9 @@
             img {
                 width: 100%;
             }
+            @include sm {
+                max-width: unset;
+            }
         }
     }
 
@@ -970,17 +974,20 @@
     &__quote {
         margin-top: 1.4rem;
         color: #003d3d;
-        font-size: 2rem;
+        font-size: 20px;
         font-weight: 700;
         line-height: 1.45;
 
         span {
             color: #008080;
         }
+        @include md {
+            font-size: 18px;
+        }
     }
 
     &__issue {
-        margin-top: 1.8rem;
+        margin-top: 2.5rem;
         border-radius: 30px;
         background: rgba(0, 130, 129, 0.3);
         border: 0.2rem solid #ffe44b;

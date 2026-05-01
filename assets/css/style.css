@@ -1211,6 +1211,7 @@ fieldset {
 @media (max-width: 768px) {
   .use-case__intro {
     grid-template-columns: 1fr;
+    gap: 1.6rem;
   }
 }
 .use-case__intro-content {
@@ -1231,6 +1232,11 @@ fieldset {
 .use-case__intro-visual img {
   width: 100%;
 }
+@media (max-width: 576px) {
+  .use-case__intro-visual {
+    max-width: unset;
+  }
+}
 .use-case__company {
   color: #002020;
   font-size: 16px;
@@ -1244,15 +1250,20 @@ fieldset {
 .use-case__quote {
   margin-top: 1.4rem;
   color: #003d3d;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.45;
 }
 .use-case__quote span {
   color: #008080;
 }
+@media (max-width: 768px) {
+  .use-case__quote {
+    font-size: 18px;
+  }
+}
 .use-case__issue {
-  margin-top: 1.8rem;
+  margin-top: 2.5rem;
   border-radius: 30px;
   background: rgba(0, 130, 129, 0.3);
   border: 0.2rem solid #ffe44b;
