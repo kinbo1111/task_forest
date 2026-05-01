@@ -817,6 +817,7 @@ fieldset {
 @media (max-width: 768px) {
   .asset-mechanism__title {
     font-size: 18px;
+    letter-spacing: -0.1rem;
   }
 }
 .asset-mechanism__title-focus {
@@ -920,42 +921,44 @@ fieldset {
 }
 .asset-mechanism__content {
   width: 48%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 1rem;
 }
 @media (max-width: 768px) {
   .asset-mechanism__content {
     width: 100%;
-    margin-top: 6rem;
-    padding-left: 3rem;
+    margin-top: 3rem;
+  }
+}
+.asset-mechanism__description {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .asset-mechanism__description {
+    gap: 1rem;
   }
 }
 .asset-mechanism__step {
   position: relative;
   display: inline-flex;
   align-items: flex-end;
-  justify-content: flex-end;
-  width: 4.6rem;
-  min-width: 4.6rem;
+  justify-content: flex-start;
+  gap: 1rem;
   line-height: 1;
   white-space: nowrap;
   word-break: normal;
   overflow-wrap: normal;
 }
 .asset-mechanism__step-label {
-  position: absolute;
-  left: 0.3rem;
-  bottom: 0.15rem;
-  display: block;
+  display: inline-block;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 1;
   text-transform: lowercase;
-  transform: rotate(-90deg);
-  transform-origin: left bottom;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
   background: linear-gradient(180deg, #6ccece 0%, #00d9f5 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -963,11 +966,7 @@ fieldset {
   color: transparent;
   white-space: nowrap;
   word-break: normal;
-}
-@media (max-width: 768px) {
-  .asset-mechanism__step-label {
-    left: -1rem;
-  }
+  font-style: normal;
 }
 .asset-mechanism__step-number {
   font-family: "Oswald", sans-serif;
@@ -982,16 +981,17 @@ fieldset {
   white-space: nowrap;
   word-break: normal;
 }
-.asset-mechanism__description {
-  flex: 1;
-  min-width: 0;
-}
 .asset-mechanism__item-title {
   color: #003d3d;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.45;
   letter-spacing: 0;
+}
+@media (max-width: 768px) {
+  .asset-mechanism__item-title {
+    font-size: 18px;
+  }
 }
 .asset-mechanism__text {
   margin-top: 1.4rem;
@@ -1001,10 +1001,13 @@ fieldset {
   line-height: 1.5;
   letter-spacing: 1%;
   padding-right: 6rem;
+  padding-left: 6rem;
 }
 @media (max-width: 768px) {
   .asset-mechanism__text {
     padding-right: 0;
+    padding-left: 0;
+    margin-top: 3rem;
   }
 }
 
