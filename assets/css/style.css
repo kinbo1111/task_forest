@@ -1291,7 +1291,7 @@ fieldset {
 }
 @media (max-width: 768px) {
   .use-case__solution {
-    padding: 4rem 3rem;
+    padding: 4rem 5px;
   }
 }
 .use-case__solution-title {
@@ -1367,7 +1367,10 @@ fieldset {
 }
 @media (max-width: 768px) {
   .use-case__step-card {
-    padding: 30px 20px 20px;
+    padding: 36.5px 20px 20px;
+    width: 280px;
+    height: 300px;
+    margin: 0 auto;
   }
 }
 .use-case__step-card {
@@ -1383,11 +1386,11 @@ fieldset {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  padding-bottom: 1.2rem;
-  border-bottom: 1px solid #008080;
+  padding: 0 0.4rem 1.4rem 0.4rem;
+  border-bottom: 2px solid rgba(0, 128, 128, 0.3);
 }
 .use-case__step-card p {
-  margin-top: 1.2rem;
+  margin-top: 12px;
   color: #003d3d;
   font-size: 16px;
   line-height: 1.55;
@@ -1401,11 +1404,6 @@ fieldset {
 .use-case__step-icon {
   width: auto;
   height: 66px;
-}
-@media (max-width: 768px) {
-  .use-case__step-icon {
-    height: 80px;
-  }
 }
 .use-case__step-arrow {
   width: 0;
@@ -1432,6 +1430,11 @@ fieldset {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+@media (max-width: 768px) {
+  .use-case__result {
+    align-items: flex-start;
+  }
 }
 .use-case__result p {
   color: #003d3d;
@@ -1503,6 +1506,11 @@ fieldset {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.45;
+}
+@media (max-width: 768px) {
+  .use-case__other-card p {
+    font-size: 15px;
+  }
 }
 .use-case__other-thumb {
   position: relative;
