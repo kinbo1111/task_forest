@@ -1582,6 +1582,9 @@
             span {
                 font-weight: 700;
             }
+            @include md {
+                font-size: 15px;
+            }
         }
     }
 
