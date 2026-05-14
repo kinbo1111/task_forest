@@ -2978,7 +2978,8 @@ fieldset {
   width: 100%;
   background-color: white;
   height: 8rem;
-  padding-right: 5.5rem;
+  padding-right: 4.5rem;
+  padding-left: 1rem;
   flex-shrink: 1;
   --r: clamp(18px, 2.2vw, 32px);
   clip-path: shape(from 0 0, hline to 100%, arc by calc(-1 * var(--r)) var(--r) of var(--r), vline to calc(100% - var(--r)), arc by calc(-1 * var(--r)) var(--r) of var(--r) cw, hline to 0, close);

@@ -142,13 +142,32 @@ wow.init();
             });
         };
 
-        const refreshOpenCategoryHeights = () => {
+        const unlockOpenCategoryHeight = (element) => {
+            const categoryBody = element.closest(".faq__category-body");
+            const category = categoryBody?.closest(".faq__category");
+            if (!categoryBody || !category?.classList.contains("is-open")) return;
+
+            clearOpenTransitionHandler(categoryBody);
+            categoryBody.style.maxHeight = "none";
+        };
+
+        const refreshOpenAccordionHeights = () => {
             categories.forEach((category) => {
                 const body = category.querySelector(".faq__category-body");
                 if (!body) return;
                 if (category.classList.contains("is-open")) {
+                    clearOpenTransitionHandler(body);
                     body.style.maxHeight = "none";
                 }
+
+                category.querySelectorAll(".faq__item").forEach((item) => {
+                    const answer = item.querySelector(".faq__answer");
+                    if (!answer) return;
+                    if (item.classList.contains("is-open")) {
+                        clearOpenTransitionHandler(answer);
+                        answer.style.maxHeight = "none";
+                    }
+                });
             });
         };
 
@@ -204,30 +223,24 @@ wow.init();
                 const item = button.closest(".faq__item");
                 const answer = item?.querySelector(".faq__answer");
                 if (!item || !answer) return;
+                unlockOpenCategoryHeight(item);
                 const expanded = item.classList.toggle("is-open");
                 button.setAttribute("aria-expanded", expanded ? "true" : "false");
                 setAccordionState(answer, expanded);
-
-                const categoryBody = item.closest(".faq__category-body");
-                if (categoryBody && categoryBody.style.maxHeight !== "0px") {
-                    requestAnimationFrame(() => {
-                        categoryBody.style.maxHeight = `${categoryBody.scrollHeight}px`;
-                    });
-                }
             });
         });
 
         window.addEventListener("resize", () => {
-            refreshOpenCategoryHeights();
+            refreshOpenAccordionHeights();
         });
 
         // Prevent initial clipping after fonts/layout finalize.
         requestAnimationFrame(() => {
-            refreshOpenCategoryHeights();
+            refreshOpenAccordionHeights();
         });
-        window.addEventListener("load", refreshOpenCategoryHeights);
+        window.addEventListener("load", refreshOpenAccordionHeights);
         if (document.fonts?.ready) {
-            document.fonts.ready.then(refreshOpenCategoryHeights);
+            document.fonts.ready.then(refreshOpenAccordionHeights);
         }
     };
 
