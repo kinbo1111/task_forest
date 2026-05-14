@@ -637,11 +637,13 @@
     }
 
     &__visual {
-        width: 43%;
+        width: 42%;
         display: flex;
         align-items: center;
         justify-content: center;
-
+        background-color: rgba(0, 130, 129, 0.3);
+        border-radius: 0 0 20px 0;
+        padding: 20px;
         @include md {
             width: 100%;
         }
